@@ -1,11 +1,12 @@
 import React from 'react';
-import {BrowserRouter} from 'react-router-dom';
+import NotPage from '../not-page/not-page';
+// import {BrowserRouter} from 'react-router-dom';
 // import PropTypes from 'prop-types';
 
 function App() {
   return (
-    <BrowserRouter>
-    </BrowserRouter>
+    <NotPage />
+
   );
 }
 
