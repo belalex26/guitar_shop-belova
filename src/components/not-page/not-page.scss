@@ -7,11 +7,11 @@
 }
 
 .not-page__title {
-    font-size: 280px;
+    font-size: 250px;
     margin: 0;
     font-weight: 900;
     letter-spacing: 20px;
-    background: url('../../images/bg-not-page.jpg') center no-repeat;
+    background: url('../../images/bg-not-page.jpg') center repeat-x;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-size: cover;
@@ -20,6 +20,7 @@
 .not-page__text {
     font-size: 30px;
     padding-bottom: 20px;
+    letter-spacing: 3px;
     color: #585757;
 }
 
