@@ -55,7 +55,7 @@ const RemoveModal = () => {
             <button className="remove-modal__btn remove-modal__btn--close" type="button">Продолжить покупки</button>
           </div>
         </div>
-        <button className="remove-modal__close" aria-label="закрыть"></button>
+        <button className="remove-modal__close" aria-label="закрыть" onClick={onModalCloseClick}></button>
       </section>
     </div>
   );

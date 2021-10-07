@@ -19,8 +19,9 @@ function CatalogItem({...props}) {
   return (
     <>
       <li className="catalog__item">
-        {/* <img className="catalog__item-img" src={props.image} alt="фото товара" />*/}
-        <div className="catalog__item-img">фото товара</div>
+        <div className="catalog__item-img">
+          <img className="catalog__item-img-img" src={props.image} alt="фото товара" />
+        </div>
         <div className="catalog__item-rate">
           <Rating />
           <p className="catalog__item-rate-text">{props.reviews}</p>

@@ -1,14 +1,3 @@
- // временный
-.catalog__item-img {
-    width: 68px;
-    height: 190px;
-    background-color: gray;
-    margin-top: 11px;
-    margin-bottom: 2px;
-} 
-
-// основные
-
 .catalog__item {
     display: flex;
     flex-direction: column;
@@ -16,6 +5,13 @@
     border: 1px solid $border-color;
     padding-bottom: 20px;
 }
+
+.catalog__item-img {
+    width: 68px;
+    height: 190px;
+    margin-top: 11px;
+    margin-bottom: 2px;
+} 
 
 .catalog__item-info,
 .catalog__item-btns {

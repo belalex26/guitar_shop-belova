@@ -52,7 +52,7 @@ const AddModal = () => {
           </div>
           <button className="add-modal__btn" type="button">Добавить в корзину</button>
         </div>
-        <button className="add-modal__close" aria-label="закрыть"></button>
+        <button className="add-modal__close" onClick={onModalCloseClick} aria-label="закрыть"></button>
       </section>
     </div>
   );
