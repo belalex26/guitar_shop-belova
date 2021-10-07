@@ -1,0 +1,27 @@
+
+.social-bar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 49.5%;
+    margin-top: 53px;
+}
+
+.social__icon {
+    fill: $base-while;
+    opacity: 0.65;
+}
+
+.social-bar__link:focus {
+    outline: none;
+}
+
+.social-bar__link:hover .social__icon,
+.social-bar__link:focus .social__icon {
+    opacity: 1;
+}
+
+.social-bar__link:active .social__icon {
+    fill: $button-base-2;
+}

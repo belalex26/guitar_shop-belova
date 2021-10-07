@@ -1,0 +1,16 @@
+.main__catalog {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 27.5% 72%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.main__catalog-title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding-left: 3.9%;
+    padding-top: 86px;
+    font-size: 22px;
+    font-weight: 700;
+}

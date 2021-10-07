@@ -1,0 +1,174 @@
+.remove-modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(88, 87, 87, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+    color: #48494D;
+    font-family: 'droid-sans', 'Arial', sans-serif;
+    visibility: hidden;
+    
+}
+
+.remove-modal.remove-modal--active {
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+}
+
+.remove-modal__callback {
+    position: relative;
+    background-color: $base-while;
+    width: 740px;
+    box-shadow: 0px 5px 6px rgba(63, 63, 63, 0.2);
+    border-radius: 4px;
+    padding-bottom: 20px;
+}
+
+.remove-modal__title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    line-height: 15px;
+    margin-left: 50px;
+    padding-top: 12px;
+}
+
+.remove-modal__info {
+    display: flex;
+}
+
+//временно 
+
+.remove-modal__img {
+    width: 56px;
+    height: 128px;
+    background-color: royalblue;
+    //
+    margin-right: 40px;
+    margin-left: 50px;
+    margin-top: 8px;
+}
+
+.remove-modal__info-date {
+    width: 46%;
+}
+
+.remove-modal__info-name {
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.85px;
+    font-weight: 700;
+    margin-top: 21px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.remove-modal__info-article,
+.remove-modal__info-type {
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.8px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.remove-modal__info-price {
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    margin-top: 15px;
+}
+
+.remove-modal__control {
+    padding-left: 40px;
+    text-align: center;
+}
+
+.remove-modal__btn {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 12px 16px;
+    border-radius: 2px;
+}
+
+.remove-modal__btn--remove {
+    border: none;
+    color: $base-while;
+    background-color: $button-base-2;
+    padding: 12px 47px;
+    margin-bottom: 17px;
+    margin-top: 20px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $button-base-2-hover;
+    }
+
+    &:active {
+        background-color: $button-base-2-active;
+    }
+}
+
+.remove-modal__btn--close {
+    border: 1px solid $input-color;
+    color: $input-color;
+    background-color: $base-while;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        opacity: 0.7;
+    }
+
+    &:active {
+        border: 1px solid $input-color-active;
+        opacity: 0.5;
+    }
+}
+
+.remove-modal__close {
+    position: absolute;
+    right: 13px;
+    top: 16px;
+    border: none;
+    background-color: $base-while;
+    width: 30px;
+    height: 30px;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 1px;
+        background-color: #9F9E9E;
+        transform: rotate(45deg);
+        top: 14px;
+        left: 8px;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 1px solid $footer-bg;
+    }
+
+    &:active {
+        opacity: 0.5;
+        border: 1px solid $checkbox-disable;
+    }
+}

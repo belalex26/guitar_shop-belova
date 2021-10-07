@@ -40,11 +40,19 @@ const AddModal = () => {
   return (
     <div className={modalActive ? `add-modal add-modal--active` : `add-modal`} onClick={onModalCloseClick} role="dialog" tabIndex="-1" >
       <section className={openModal ? `add-modal__callback add-modal__callback--active` : `add-modal__callback`} onClick={(evt) => evt.stopPropagation()}>
-        <h2 className="">Подтверждение</h2>
+        <h2 className="visually-hidden">Подтверждение</h2>
         <p className="add-modal__title">Добавить товар в корзину</p>
-        <div className="">
-          <button className="" type="button">Добавить в корзину</button>
+        <div className="add-modal__info">
+          <div className="add-modal__img">фото товара</div>
+          <div className="add-modal__info-date">
+            <p className="add-modal__info-name">Гитара Честер bass</p>
+            <p className="add-modal__info-article">Артикул: SO757575</p>
+            <p className="add-modal__info-type">Электрогитара, 6 струнная</p>
+            <p className="add-modal__info-price">Цена: 17 500 ₽</p>
+          </div>
+          <button className="add-modal__btn" type="button">Добавить в корзину</button>
         </div>
+        <button className="add-modal__close" aria-label="закрыть"></button>
       </section>
     </div>
   );

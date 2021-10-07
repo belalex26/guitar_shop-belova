@@ -1,33 +1,42 @@
 .menu {
-    background-color: $header-bg;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
 }
 
 .menu__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-grow: 2;
-    max-width: 1020px;
+    padding: 9px 5.8% 9px 4%;
+}
+
+.menu .logo {
+    fill: $base-black;
+    stroke: none;
+}
+
+.menu .logo__line {
+    stroke: $base-black;
 }
 
 .menu__list {
     padding: 0;
     list-style: none;
     display: flex;
+    width: 60%;
+    margin-left: 2%;
 }
 
 .menu__item {
-    padding: 25px 20px;
+    padding: 20px 20px;
+    margin-right: 1%;
 }
 
 .menu__link {
     text-decoration: none;
     color: $base-black;
     letter-spacing: 5%;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
 
     &:hover,

@@ -10,8 +10,12 @@ function Main() {
     <>
       <Header />
       <main className="main">
-        <Filters />
-        <Catalog />
+        <h1 className="visually-hidden">Guitar shop интернет магазин гитар</h1>
+        <section className="main__catalog">
+          <h2 className="main__catalog-title">Каталог гитар</h2>
+          <Filters />
+          <Catalog />
+        </section>
       </main>
       <Footer />
     </>

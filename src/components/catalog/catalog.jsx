@@ -4,7 +4,9 @@ import {useSelector} from "react-redux";
 // import {increment} from '../../store/basketSlise';
 import {selectGuitars} from "../../store/giutarsSlise";
 import CatalogItem from "../catalog-item/catalog-item";
-import AddModal from "../add-modal/add-modal";
+// import AddModal from "../add-modal/add-modal";
+import SortPanel from "../sort-panel/sort-panel";
+import RemoveModal from "../remove-modal/remove-modal";
 
 function Catalog() {
 
@@ -25,6 +27,7 @@ function Catalog() {
   return (
     <>
       <section className="catalog">
+        <SortPanel />
         <ul className="catalog__list">
           {guitars.map((item) => <CatalogItem key={item.article}
             article={item.article}
@@ -35,7 +38,7 @@ function Catalog() {
           />)}
         </ul>
       </section>
-      <AddModal />
+      <RemoveModal />
     </>
 
 

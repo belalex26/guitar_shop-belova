@@ -9,7 +9,7 @@ function Menu() {
         <Logo />
         <ul className="menu__list">
           <li className="menu__item">
-            <a className="menu__link" href="/catalog">
+            <a className="menu__link" href="/">
               Каталог
             </a>
           </li>
@@ -31,6 +31,7 @@ function Menu() {
         </ul>
         <NavigationBar />
       </div>
+
     </nav>
 
   );

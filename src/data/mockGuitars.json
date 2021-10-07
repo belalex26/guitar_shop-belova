@@ -11,7 +11,7 @@
   {
     "article": "TK129049",
     "name": "СURT Z300",
-    "image": "../../images/curt-z300.png",
+    "image": "../src/images/curt-z300.png",
     "type": "electric",
     "reviews": "9",
     "strings": "7",

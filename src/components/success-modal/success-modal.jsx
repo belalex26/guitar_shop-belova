@@ -9,7 +9,7 @@ import {selectModal} from '../../store/modalSlise';
 const body = document.querySelector(`.body`);
 const ESC_PRESS = 27;
 
-const AddModal = () => {
+const SuccessModal = () => {
   const dispatch = useDispatch();
   const modalActive = useSelector(selectModal);
 
@@ -39,19 +39,19 @@ const AddModal = () => {
   };
 
   return (
-    <div className={modalActive ? `success-modal success-modal--active` : `success-modal`} onClick={onModalCloseClick} role="dialog" tabIndex="-1" >
+    <div className={modalActive ? `success-modal success-modal--active` : `success-modal-modal`} onClick={onModalCloseClick} role="dialog" tabIndex="-1" >
       <section className={openModal ? `success-modal__callback success-modal__callback--active` : `success-modal__callback`} onClick={(evt) => evt.stopPropagation()}>
         <p className="success-modal__title">Товар успешно добавлен в корзину</p>
         <div className="success-modal__content">
-          <Link className="success-modal__btn--basket" to="/basket">Перейти в корзину</Link>
-          <Link className="success-modal__btn--basket" to="/">Продолжить покупки</Link>
+          <Link className="success-modal__btn success-modal__btn--basket" to="/basket">Перейти в корзину</Link>
+          <Link className="success-modal__btn success-modal__btn--main" to="/">Продолжить покупки</Link>
         </div>
-        <button className="success-modal__close">X</button>
+        <button className="success-modal__close" aria-label="закрыть">X</button>
       </section>
     </div>
   );
 
 };
 
+export default SuccessModal;
 
-export default AddModal;

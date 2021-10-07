@@ -3,8 +3,10 @@ import Menu from '../menu/menu';
 
 function Header() {
   return (
-    <header>
-      <Menu />
+    <header className="header">
+      <div className="header__container">
+        <Menu />
+      </div>
     </header>
 
   );

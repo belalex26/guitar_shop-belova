@@ -1,0 +1,134 @@
+.basket {
+    padding-top: 113px;
+    padding-bottom: 69px;
+}
+
+.basket__container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding-left: 4%;
+    padding-right: 3.2%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+}
+
+.basket__title {
+    font-weight: bold;
+    font-size: 22px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.basket__list {
+    list-style: none;
+    padding-left: 0;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 54px; //временно
+}
+
+.basket__promo-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-left: -27px;
+    margin-bottom: 0;
+}
+
+.basket__promo-text {
+    font-size: 12px;
+    margin-left: -27px;
+    letter-spacing: 1.2px;
+    margin-top: 9px;
+}
+
+.basket__promo-label {
+    margin-left: -27px;
+    margin-right: 33px;
+}
+
+.basket__promo-input {
+    width: 170px;
+    height: 36px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 5px;
+    margin-top: 10px;
+    border: 2px solid $border-color;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        border: 2px solid $footer-bg;
+    }
+    
+    &:active {
+        opacity: 0.5;
+        border: 2px solid $checkbox-disable;
+    }
+}
+
+.basket__promo-btn {
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: $base-while;
+    letter-spacing: 0.8px;
+    padding: 8px 21px;
+    border-radius: 2px;
+    background-color: $button-base-1;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $input-color;
+    }
+
+    &:active {
+        background-color: $input-color-base;
+    }
+}
+
+.basket__control {
+    justify-self: end;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.basket__control-total {
+    margin-top: 15px;
+    margin-right: 13px;
+    margin-bottom: 37px;
+}
+
+.basket__control-submit {
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: $base-while;
+    letter-spacing: 0.8px;
+    padding: 8px 38px;
+    border-radius: 2px;
+    background-color: $button-base-2;
+    margin-right: 7px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        background-color: $button-base-2-hover;
+    }
+
+    &:active {
+        background-color: $button-base-2-active;
+    }
+}

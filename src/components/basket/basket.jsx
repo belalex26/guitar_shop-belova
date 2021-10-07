@@ -1,8 +1,8 @@
 import React from 'react';
-import {useSelector /* , useDispatch*/} from 'react-redux';
+// import {useSelector /* , useDispatch*/} from 'react-redux';
 
-import {selectGuitars} from '../../store/giutarsSlise';
-import {selectBasket} from '../../store/basketSlise';
+// import {selectGuitars} from '../../store/giutarsSlise';
+// import {selectBasket} from '../../store/basketSlise';
 
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -11,14 +11,15 @@ import BasketItem from "../basket-item/basket-item";
 
 function Basket() {
 
-  const guitars = useSelector(selectGuitars);
-  const basket = useSelector(selectBasket);
+  // const guitars = useSelector(selectGuitars);
+  // const basket = useSelector(selectBasket);
   // const dispatch = useDispatch();
 
+  /*
   const goodsObj = guitars.reduce((accum, item) =>{
     accum[item[`article`]] = item;
     return accum;
-  }, {});
+  }, {});*/
 
   /*
   const onClickRemove = (evt) => {
@@ -31,26 +32,38 @@ function Basket() {
     <>
       <Header />
       <main className="basket">
-        <h1 className="basket__title">Корзина</h1>
-        <ul className="basket__list">
-          {Object.keys(basket).map((item) => <BasketItem key={goodsObj[item][`article`]}
-            article = {goodsObj[item][`article`]}
-            name = {goodsObj[item][`name`]}
-            strings = {goodsObj[item][`strings`]}
-            type = {goodsObj[item][`type`]}
-            price = {goodsObj[item][`price`]}
-            count = {basket[item]}
-          />)}
-        </ul>
+        <div className="basket__container">
+          <h1 className="basket__title">Корзина</h1>
+          <ul className="basket__list">
 
-        <p className="basket__promo-title">Промокод на скидку</p>
-        <p className="basket__promo-text">Введите свой промокод, если он у вас есть.</p>
-        <label className="basket__promo-label">
-          <input className="basket__promo-input" type="text" placeholder="GITARAHIT" />
-        </label>
-        <button className="basket__promo-btn">Применить купон</button>
-        <p className="basket__total-price">Всего: 47 000 ₽</p>
-        <button className="basket__submit-btn">Оформить заказ</button>
+            <BasketItem />
+            <BasketItem />
+            {/*
+            {Object.keys(basket).map((item) => <BasketItem key={goodsObj[item][`article`]}
+              article = {goodsObj[item][`article`]}
+              name = {goodsObj[item][`name`]}
+              strings = {goodsObj[item][`strings`]}
+              type = {goodsObj[item][`type`]}
+              price = {goodsObj[item][`price`]}
+              count = {basket[item]}
+            />)}
+            */}
+          </ul>
+
+          <div className="basket__promo">
+            <p className="basket__promo-title">Промокод на скидку</p>
+            <p className="basket__promo-text">Введите свой промокод, если он у вас есть.</p>
+            <label className="basket__promo-label">
+              <input className="basket__promo-input" type="text" placeholder="GITARAHIT" />
+            </label>
+            <button className="basket__promo-btn">Применить купон</button>
+          </div>
+          <div className="basket__control">
+            <p className="basket__control-total">Всего: 47 000 ₽</p>
+            <button className="basket__control-submit">Оформить заказ</button>
+
+          </div>
+        </div>
 
       </main>
       <Footer />

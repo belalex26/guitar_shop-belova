@@ -5,31 +5,41 @@
     align-items: center;
 }
 
-.navigation-bar__link--basket {
-    position: relative;
+.navigation-bar__item {
+    width: 40px;
+    padding: 0 3.5%;
+    margin-left: 5px;
+}
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 40px;
-        height: 40px;
-        background: url('../../images/icon-basket.svg') center no-repeat;
-    }
-   
+.navigation-bar__item--search {
+    width: 41.7px;
 }
 
 .navigation-bar__link {
     &:hover,
-    &:focus {
-        outline: none;                  
-        color: red;
-    }
-
+    &:focus,
     &:active {
-        outline: none;
-        background-color: $link-hover;
-        opacity: 0.5;
+        outline: none;                  
     }
+}
+
+.navigation-bar__link-icon--maps {
+    stroke: $base-black;
+    fill: none;
+}
+
+.navigation-bar__link:hover .navigation-bar__link-icon,
+.navigation-bar__link:focus .navigation-bar__link-icon {
+    fill: $link-hover;
+}
+
+
+.navigation-bar__link:hover .navigation-bar__link-icon--maps,
+.navigation-bar__link:focus .navigation-bar__link-icon--maps {
+    fill: none;
+    stroke: $link-hover;
+}
+
+.navigation-bar__link:active .navigation-bar__link-icon {
+    opacity: 0.5;
 }

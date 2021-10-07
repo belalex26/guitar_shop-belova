@@ -1,0 +1,83 @@
+.sort-panel {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.sort-panel__title {
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-right: 19px;
+
+}
+
+.sort-panel__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.sort-panel__type {
+    width: 70%;
+}
+
+.sort-panel__type-btn {
+    border: none;
+    background-color: $base-while;
+    font-size: 16px;
+    color: $input-color;
+    padding: 5px 5px;
+    margin-right: 7%;
+    letter-spacing: 1px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: $base-black;
+    }
+
+    &:active {
+        color: $base-black;
+    }
+}
+
+.sort-panel__direction {
+    padding-right: 1.6%;
+}
+
+.sort-panel__direction-btn {
+    position: relative;
+    border: none;
+    background-color: $base-while;
+    width: 35px;
+    height: 40px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        background: url("../../images/icon-arrow-up.svg");
+        width: 24px;
+        height: 24px;
+        top: 20%;
+        left: 20%;
+        opacity: 0.5;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.sort-panel__direction--down {
+    &::after {
+        transform: rotate(180deg);
+    }
+}
+
+.sort-panel__direction-btn:active::after,
+.sort-panel__direction-btn:hover::after,
+.sort-panel__direction-btn:focus::after {
+    opacity: 1;
+} 
