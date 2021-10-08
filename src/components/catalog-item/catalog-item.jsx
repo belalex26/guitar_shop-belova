@@ -1,20 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {useDispatch} from "react-redux";
-import {openModal} from "../../store/modalSlise";
 import Rating from "../rating/rating";
-// import AddModal from "../add-modal/add-modal";
 
 
 function CatalogItem({...props}) {
-
-  const dispatch = useDispatch();
-
-  const onClickOpenModal = () => {
-    dispatch(openModal());
-    // eslint-disable-next-line no-console
-    console.log(`open`);
-  };
 
   return (
     <>
@@ -32,7 +21,7 @@ function CatalogItem({...props}) {
         </div>
         <div className="catalog__item-btns">
           <button className="catalog__item-btn-more" type="button">Подробнее</button>
-          <button className="catalog__item-btn-buy" type="button" onClick={onClickOpenModal} >Купить</button>
+          <button className="catalog__item-btn-buy" data-key={props.article} type="button" >Купить</button>
         </div>
       </li>
     </>

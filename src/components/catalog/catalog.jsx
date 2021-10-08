@@ -2,58 +2,55 @@ import React from 'react';
 import {useSelector, useDispatch} from "react-redux";
 import ReactPaginate from 'react-paginate';
 
-// import {increment} from '../../store/basketSlise';
 import {selectGuitars} from "../../store/giutarsSlise";
 import {selectPagination} from "../../store/paginationSlise";
 import {selectPage} from "../../store/paginationSlise";
+import {openModal} from "../../store/modalSlise";
+import {dataObject} from "../../store/objectSlise";
+
+
 import CatalogItem from "../catalog-item/catalog-item";
 import AddModal from "../add-modal/add-modal";
 import SortPanel from "../sort-panel/sort-panel";
+
 
 function Catalog() {
 
   const guitars = useSelector(selectGuitars);
   const pageNumber = useSelector(selectPagination);
-  const pageCountSelect = useSelector(selectPagination);
   const dispatch = useDispatch();
   const GUITARS_PER_PAGE = 9;
 
   const pagesVisites = pageNumber * GUITARS_PER_PAGE;
   const pageCount = Math.ceil(guitars.length / GUITARS_PER_PAGE);
 
-  // eslint-disable-next-line no-console
-  console.log(pageCountSelect);
-
   const onPageChangeClick = ({selected}) => {
     dispatch(selectPage(selected));
   };
 
-  const displayGuitars = guitars.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
-  .map((item) => <CatalogItem key={item.article}
-    article={item.article}
-    name={item.name}
-    image={item.image}
-    price={item.price}
-    reviews={item.reviews}
-  />);
-
-
-  /*
-  // eslint-disable-next-line consistent-return
-  const clickHandler = (evt) => {
+  const onClickOpenModal = (evt) => {
     evt.preventDefault();
     let target = evt.target;
-    if (!target.classList.contains(`catalog__item-btn-buy`)) {
-      return true;
+    if (target.classList.contains(`catalog__item-btn-buy`)) {
+      dispatch(dataObject(target.getAttribute(`data-key`)));
+      dispatch(openModal());
     }
-    dispatch(increment(target.getAttribute(`data-key`)));
-  };*/
+  };
+
+  const displayGuitars = guitars.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
+    .map((item) => <CatalogItem key={item.article}
+      article={item.article}
+      name={item.name}
+      image={item.image}
+      price={item.price}
+      reviews={item.reviews}
+    />);
 
   return (
     <>
       <section className="catalog">
         <SortPanel />
-        <ul className="catalog__list">
+        <ul className="catalog__list" onClick={onClickOpenModal}>
           {displayGuitars}
         </ul>
         <ReactPaginate

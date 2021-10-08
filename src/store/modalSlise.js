@@ -4,19 +4,34 @@ import {createSlice} from "@reduxjs/toolkit";
 export const modalSlise = createSlice({
   name: `modal`,
   initialState: {
-    isOpened: false,
+    isOpenedAdd: false,
+    isOpenedSuccess: false,
+    isOpenedRemove: false,
   },
   reducers: {
     openModal: (state) => {
-      state.isOpened = true;
+      state.isOpenedAdd = true;
     },
     closeModal: (state) => {
-      state.isOpened = false;
+      state.isOpenedAdd = false;
     },
-
+    openModalSuccess: (state) => {
+      state.isOpenedSuccess = true;
+    },
+    closeModalSuccess: (state) => {
+      state.isOpenedSuccess = false;
+    },
+    openModalRemove: (state) => {
+      state.isOpenedRemove = true;
+    },
+    closeModalRemove: (state) => {
+      state.isOpenedRemove = false;
+    },
   },
 });
 
-export const {openModal, closeModal} = modalSlise.actions;
-export const selectModal = (state) => state.modal.isOpened;
+export const {openModal, closeModal, openModalSuccess, closeModalSuccess, openModalRemove, closeModalRemove} = modalSlise.actions;
+export const selectModalAdd = (state) => state.modal.isOpenedAdd;
+export const selectModalSuccess = (state) => state.modal.isOpenedSuccess;
+export const selectModalRemove = (state) => state.modal.isOpenedRemove;
 export default modalSlise.reducer;

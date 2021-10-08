@@ -10,7 +10,7 @@
     padding-right: 3.2%;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
 }
 
 .basket__title {
@@ -22,14 +22,72 @@
     grid-row-end: 2;
 }
 
+.basket__breadcrumps {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0.9px;
+    color: $link-hover;
+    list-style: none;
+    padding: 6px 0 0 0;
+    margin: 0;
+}
+
+.basket__breadcrumps-item {
+    position: relative;
+    padding-right: 35px;
+
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 73px;
+        width: 16px;
+        height: 16px;
+        background: url("../../images/arrowRight.svg") no-repeat center;
+    }
+}
+
+.basket__breadcrumps-item.basket__breadcrumps-item--last {
+    &::after {
+        opacity: 0;
+    }
+}
+
+.basket__breadcrumps-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: $link-hover;
+    letter-spacing: 0.9px;
+
+    &:focus {
+        outline: none;
+        color: $base-black;
+    }
+
+    &:active {
+        opacity: 0.5;
+    }
+}
+
+.basket__breadcrumps-text {
+    margin: 0;
+}
+
 .basket__list {
     list-style: none;
     padding-left: 0;
     grid-column-start: 1;
     grid-column-end: -1;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin-top: 54px; //временно
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 28px;
+    margin-bottom: 17px;
 }
 
 .basket__promo-title {

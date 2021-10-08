@@ -14,7 +14,7 @@
     color: #48494D;
     font-family: 'droid-sans', 'Arial', sans-serif;
     visibility: hidden;
-    
+    z-index: 1000;
 }
 
 .add-modal.add-modal--active {
@@ -45,16 +45,17 @@
     display: flex;
 }
 
-//временно 
-
 .add-modal__img {
     width: 56px;
     height: 128px;
-    background-color: royalblue;
-    //
-    margin-right: 40px;
+    display: block;
+    margin-right: 47px;
     margin-left: 50px;
     margin-top: 8px;
+}
+
+.add-modal__info-date {
+    width: 43%;
 }
 
 .add-modal__info-name {
@@ -91,7 +92,6 @@
     padding: 12px 22px;
     border-radius: 2px;
     background-color: $button-base-2;
-    margin-left: 125px;
     margin-top: 23px;
     align-self: flex-start;
 

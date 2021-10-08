@@ -5,7 +5,6 @@ import Main from '../main/main';
 import Basket from '../basket/basket';
 import NotPage from '../not-page/not-page';
 
-
 function App() {
   return (
     <BrowserRouter>

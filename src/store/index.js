@@ -1,13 +1,13 @@
 import {configureStore} from "@reduxjs/toolkit";
 import guitarsSlise from "./giutarsSlise";
-import basketSlise from "./basketSlise";
+import objectSlise from "./objectSlise";
 import modalSlise from "./modalSlise";
 import paginationSlise from "./paginationSlise";
 
 export default configureStore({
   reducer: {
     guitars: guitarsSlise,
-    basket: basketSlise,
+    object: objectSlise,
     modal: modalSlise,
     pagination: paginationSlise,
   },

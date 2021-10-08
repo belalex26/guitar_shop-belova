@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 // import {useSelector /* , useDispatch*/} from 'react-redux';
 
 // import {selectGuitars} from '../../store/giutarsSlise';
@@ -34,8 +35,19 @@ function Basket() {
       <main className="basket">
         <div className="basket__container">
           <h1 className="basket__title">Корзина</h1>
-          <ul className="basket__list">
+          <ul className="basket__breadcrumps">
+            <li className="basket__breadcrumps-item">
+              <Link className="basket__breadcrumps-link" to="/main">Главная</Link>
+            </li>
+            <li className="basket__breadcrumps-item">
+              <Link className="basket__breadcrumps-link" to="/">Каталог</Link>
+            </li>
+            <li className="basket__breadcrumps-item basket__breadcrumps-item--last">
+              <p className="basket__breadcrumps-text">Оформляем</p>
+            </li>
+          </ul>
 
+          <ul className="basket__list">
             <BasketItem />
             <BasketItem />
             {/*
