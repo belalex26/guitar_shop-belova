@@ -14,7 +14,6 @@
     color: #48494D;
     font-family: 'droid-sans', 'Arial', sans-serif;
     visibility: hidden;
-    
 }
 
 .remove-modal.remove-modal--active {
@@ -50,8 +49,7 @@
 .remove-modal__img {
     width: 56px;
     height: 128px;
-    background-color: royalblue;
-    //
+    display: block;
     margin-right: 40px;
     margin-left: 50px;
     margin-top: 8px;
@@ -169,6 +167,6 @@
 
     &:active {
         opacity: 0.5;
-        border: 1px solid $checkbox-disable;
+        border: 1px solid $checkbox-disable-border;
     }
 }

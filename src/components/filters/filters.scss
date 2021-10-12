@@ -62,7 +62,7 @@
     
     &:active {
         opacity: 0.5;
-        border: 0.7px solid $checkbox-disable;
+        border: 0.7px solid $checkbox-disable-border;
     }
 }
 
@@ -162,13 +162,13 @@
 
 .filters__type-checkbox:disabled + .filters__type-text::before,
 .filters__strings-checkbox:disabled +.filters__strings-text::before {
-    background-color: $checkbox-disable;
-    border: 1px solid $checkbox-disable;
+    background-color: $checkbox-disable-bg;
+    border: 1px solid $checkbox-disable-border;
 }
 
 .filters__type-checkbox:disabled + .filters__type-text,
 .filters__strings-checkbox:disabled +.filters__strings-text {
-    color: $checkbox-disable;
+    color: $checkbox-disable-border;
 }
 
 .filters__btn {

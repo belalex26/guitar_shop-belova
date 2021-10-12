@@ -35,7 +35,7 @@
     flex: 0 0 20%;
     height: 100%;
     cursor: pointer;
-    color: rgba(189, 190, 194, 1);
+    color: $rating-color;
 
     &::before {
         content: "★";

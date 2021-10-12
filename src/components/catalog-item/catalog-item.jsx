@@ -1,27 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {useDispatch} from "react-redux";
+
 import Rating from "../rating/rating";
+import {openModal} from '../../store/modalSlise';
+import {dataObject} from "../../store/objectSlise";
 
 
 function CatalogItem({...props}) {
+  const {item} = props;
+  const dispatch = useDispatch();
+
+  const onClickOpenModal = (evt) => {
+    evt.preventDefault();
+    dispatch(openModal());
+    dispatch(dataObject(item));
+  };
 
   return (
     <>
       <li className="catalog__item">
         <div className="catalog__item-img">
-          <img className="catalog__item-img-img" src={props.image} alt="фото товара" />
+          <img className="catalog__item-img-img" src={item.image} alt="фото товара" />
         </div>
         <div className="catalog__item-rate">
-          <Rating />
-          <p className="catalog__item-rate-text">{props.reviews}</p>
+          <Rating rating={item.rating}/>
+          <p className="catalog__item-rate-text">{item.reviews}</p>
         </div>
         <div className="catalog__item-info">
-          <p className="catalog__item-title">{props.name}</p>
-          <p className="catalog__item-price">{props.price} ₽</p>
+          <p className="catalog__item-title">{item.name}</p>
+          <p className="catalog__item-price">{item.price} ₽</p>
         </div>
         <div className="catalog__item-btns">
           <button className="catalog__item-btn-more" type="button">Подробнее</button>
-          <button className="catalog__item-btn-buy" data-key={props.article} type="button" >Купить</button>
+          <button className="catalog__item-btn-buy" onClick={onClickOpenModal} type="button">Купить</button>
         </div>
       </li>
     </>
@@ -29,11 +41,7 @@ function CatalogItem({...props}) {
 }
 
 CatalogItem.propTypes = {
-  image: PropTypes.string,
-  reviews: PropTypes.string,
-  name: PropTypes.string,
-  price: PropTypes.string,
-  article: PropTypes.string,
+  item: PropTypes.object,
 };
 
 export default CatalogItem;

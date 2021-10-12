@@ -1,33 +1,52 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link} from "react-router-dom";
-// import {useSelector /* , useDispatch*/} from 'react-redux';
+import {useSelector} from 'react-redux';
 
-// import {selectGuitars} from '../../store/giutarsSlise';
-// import {selectBasket} from '../../store/basketSlise';
+// import {discont} from "../../store/basketSlise";
 
 import Footer from '../footer/footer';
 import Header from '../header/header';
 import BasketItem from "../basket-item/basket-item";
-// import {decrement} from '../../store/basketSlise';
+import RemoveModal from "../remove-modal/remove-modal";
 
 function Basket() {
 
-  // const guitars = useSelector(selectGuitars);
-  // const basket = useSelector(selectBasket);
   // const dispatch = useDispatch();
+  const baskets = useSelector((state) => state.basket.baskets);
+  const [promoCode, setPromoCode] = useState(`GITARAHIT`);
+  const [errorPromoCode, setErrorPromoCode] = useState(false);
 
-  /*
-  const goodsObj = guitars.reduce((accum, item) =>{
-    accum[item[`article`]] = item;
-    return accum;
-  }, {});*/
 
-  /*
-  const onClickRemove = (evt) => {
-    let target = evt.target;
-    dispatch(decrement(target.getAttribute(`data-key`)));
-    Object.keys(basket).filter((item) => goodsObj[item][`article`] !== item);
-  };*/
+  function totalBasketsPrice() {
+    let totalPrice = 0;
+    const summ = baskets.reduce(function (accumulator, item) {
+      return accumulator + item.totalPrice;
+    }, totalPrice);
+    return summ;
+  }
+
+  let totalPriceBasket = totalBasketsPrice();
+
+  const renderBasketItem = () => {
+    if (baskets.length === 0) {
+      return (`Пока пусто`);
+    }
+    return (baskets.map((item) => <BasketItem key={item.article}
+      item={item}
+    />));
+  };
+
+  const onButtonPromoClick = () => {
+    onValidCode();
+    // eslint-disable-next-line no-console
+    console.log(errorPromoCode);
+  };
+
+  const onValidCode = () => {
+    if (promoCode === `GITARAHIT` || promoCode === `SUPERGITARA` || promoCode === `GITARA2020 `) {
+      setErrorPromoCode(false);
+    } setErrorPromoCode(true);
+  };
 
   return (
     <>
@@ -48,30 +67,19 @@ function Basket() {
           </ul>
 
           <ul className="basket__list">
-            <BasketItem />
-            <BasketItem />
-            {/*
-            {Object.keys(basket).map((item) => <BasketItem key={goodsObj[item][`article`]}
-              article = {goodsObj[item][`article`]}
-              name = {goodsObj[item][`name`]}
-              strings = {goodsObj[item][`strings`]}
-              type = {goodsObj[item][`type`]}
-              price = {goodsObj[item][`price`]}
-              count = {basket[item]}
-            />)}
-            */}
+            {renderBasketItem()}
           </ul>
 
           <div className="basket__promo">
             <p className="basket__promo-title">Промокод на скидку</p>
             <p className="basket__promo-text">Введите свой промокод, если он у вас есть.</p>
             <label className="basket__promo-label">
-              <input className="basket__promo-input" type="text" placeholder="GITARAHIT" />
+              <input className="basket__promo-input" type="text" value={promoCode} onChange={(evt) => setPromoCode(evt.target.value)}/>
             </label>
-            <button className="basket__promo-btn">Применить купон</button>
+            <button className="basket__promo-btn" onClick={onButtonPromoClick}>Применить купон</button>
           </div>
           <div className="basket__control">
-            <p className="basket__control-total">Всего: 47 000 ₽</p>
+            <p className="basket__control-total">Всего: {totalPriceBasket} ₽</p>
             <button className="basket__control-submit">Оформить заказ</button>
 
           </div>
@@ -79,6 +87,7 @@ function Basket() {
 
       </main>
       <Footer />
+      <RemoveModal />
     </>
 
   );

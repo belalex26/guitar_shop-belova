@@ -3,20 +3,21 @@ import {createSlice} from "@reduxjs/toolkit";
 export const objectSlise = createSlice({
   name: `object`,
   initialState: {
-    value: {}
+    value: {},
+    count: 1
   },
   reducers: {
-    dataObject: (state, data) => {
-      state.value = {};
-      let article = data.payload;
-      if (state.value[article] === undefined) {
-        state.value[article] = 0;
-      }
-      state.value[article]++;
+    dataObject: (state, action) => {
+      state.value = {...action.payload};
+    },
+
+    countObject: (state, action) => {
+      state.count = action.payload;
     },
   },
 });
 
-export const {dataObject} = objectSlise.actions;
+export const {dataObject, countObject} = objectSlise.actions;
 export const selectObject = (state) => state.object.value;
+export const selectCount = (state) => state.object.count;
 export default objectSlise.reducer;

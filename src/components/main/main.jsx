@@ -5,7 +5,9 @@ import Filters from "../filters/filters";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 
+
 function Main() {
+
   return (
     <>
       <Header />
@@ -21,7 +23,9 @@ function Main() {
               <p className="main__catalog-breadcrumps-text">Каталог</p>
             </li>
           </ul>
-          <Filters />
+          <aside className="main__catalog-filters filters" >
+            <Filters />
+          </aside>
           <Catalog />
         </section>
       </main>

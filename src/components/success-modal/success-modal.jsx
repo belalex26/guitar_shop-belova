@@ -43,10 +43,10 @@ const SuccessModal = () => {
       <section className={openModalSuccess ? `success-modal__callback success-modal__callback--active` : `success-modal__callback`} onClick={(evt) => evt.stopPropagation()}>
         <p className="success-modal__title">Товар успешно добавлен в корзину</p>
         <div className="success-modal__content">
-          <Link className="success-modal__btn success-modal__btn--basket" to="/basket">Перейти в корзину</Link>
+          <Link className="success-modal__btn success-modal__btn--basket" to="/basket" onClick={onModalCloseClick}>Перейти в корзину</Link>
           <button className="success-modal__btn success-modal__btn--main" type="button" onClick={onModalCloseClick}>Продолжить покупки</button>
         </div>
-        <button className="success-modal__close" aria-label="закрыть">X</button>
+        <button className="success-modal__close" aria-label="закрыть" onClick={onModalCloseClick}></button>
       </section>
     </div>
   );

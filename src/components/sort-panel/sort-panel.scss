@@ -1,14 +1,14 @@
 .sort-panel {
     display: flex;
     align-items: center;
-    margin-top: 36px;
+    margin-top: 19px;
 }
 
 .sort-panel__title {
     font-size: 16px;
     letter-spacing: 1px;
     padding-right: 19px;
-
+    margin-top: 30px;
 }
 
 .sort-panel__content {
@@ -20,36 +20,35 @@
 
 .sort-panel__type {
     width: 70%;
+    padding-top: 16px;
 }
 
-.sort-panel__type-btn {
-    border: none;
-    background-color: $base-while;
+.sort-panel__type-radio,
+.sort-panel__direction-radio {
+    opacity: 0;
+    position: absolute;
+	z-index: -1;
+    margin: 10px 0 0 10px;
+}
+
+.sort-panel__type-text {
     font-size: 16px;
     color: $input-color;
     padding: 5px 5px;
     margin-right: 7%;
     letter-spacing: 1px;
-
-    &:hover,
-    &:focus {
-        outline: none;
-        color: $base-black;
-    }
-
-    &:active {
-        color: $base-black;
-    }
 }
 
 .sort-panel__direction {
-    padding-right: 1.6%;
+    padding-right: 0.6%;
+    display: flex;
+    margin-top: 14px;
+    align-items: center;
 }
 
-.sort-panel__direction-btn {
+.sort-panel__direction-icon {
     position: relative;
-    border: none;
-    background-color: $base-while;
+    display: block;
     width: 35px;
     height: 40px;
 
@@ -57,27 +56,26 @@
         position: absolute;
         content: "";
         display: block;
-        background: url("../../images/icon-arrow-up.svg");
-        width: 24px;
-        height: 24px;
-        top: 20%;
-        left: 20%;
+        background: url("../../images/icon-arrow-up.svg") no-repeat center;
+        width: 40px;
+        height: 40px;
+        top: -6px;
+        left: -8px;
         opacity: 0.5;
     }
-
-    &:focus {
-        outline: none;
-    }
 }
 
-.sort-panel__direction--down {
+.sort-panel__direction-icon--down {
     &::after {
         transform: rotate(180deg);
+        top: 0;
     }
 }
 
-.sort-panel__direction-btn:active::after,
-.sort-panel__direction-btn:hover::after,
-.sort-panel__direction-btn:focus::after {
+.sort-panel__type-radio:checked + .sort-panel__type-text {
+    color: $base-black;
+}
+
+.sort-panel__direction-radio:checked + .sort-panel__direction-icon::after {
     opacity: 1;
-} 
+}

@@ -1,8 +1,7 @@
 .basket__item-img {
     width: 48px;
     height: 124px;
-    background-color: royalblue;
-    //временный
+    display: block;
     margin-left: 4.5%;
     margin-top: 21px;
     margin-right: 8%;
@@ -158,7 +157,7 @@
 
     &:active {
         opacity: 0.5;
-        border: 1px solid $checkbox-disable;
+        border: 1px solid $checkbox-disable-border;
     }
 }
 
