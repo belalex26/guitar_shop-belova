@@ -106,6 +106,7 @@
 }
 
 .basket__promo-label {
+    position: relative;
     margin-left: -27px;
     margin-right: 33px;
 }
@@ -114,7 +115,6 @@
     width: 170px;
     height: 36px;
     font-size: 16px;
-    text-transform: uppercase;
     text-align: center;
     box-sizing: border-box;
     padding: 0 5px;
@@ -189,4 +189,21 @@
     &:active {
         background-color: $button-base-2-active;
     }
+}
+
+.basket__promo-error {
+    position: absolute;
+    top: 28px;
+    left: 24px;
+    opacity: 0;
+    color: $basket-index-color;
+    font-size: 12px;
+}
+
+.basket__promo-error.basket__promo-error--active {
+    opacity: 1;
+}
+
+.basket__promo-error.basket__promo-error--active + .basket__promo-input {
+    border-color: $basket-index-color;
 }

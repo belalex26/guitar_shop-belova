@@ -3,12 +3,11 @@ export default [
     "article": `SO757575`,
     "name": `Честер Bass`,
     "image": `https://4.downloader.disk.yandex.ru/preview/17fc968469586115e1c8f6140d1d94802a9221ffdbad5fb2a1d20f04a811a573/inf/z48AD0wFFIVfxtHHoQbb7Ht_MYMZ9XODZeqaQtWwWix64iSpP5Sc_6Imi3_cqH6cJWWkPWwCW6iYqd4hmcu8SQ%3D%3D?uid=63084333&filename=chester-bass.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
-    "type": `electric`,
+    "type": `электрогитара`,
     "rating": 5,
     "reviews": 15,
     "strings": 7,
-    "count": 1,
-    "price": 17500
+    "price": 17500,
   },
   {
     "article": `TK129049`,
@@ -18,8 +17,7 @@ export default [
     "rating": 5,
     "reviews": 9,
     "strings": 7,
-    "count": 1,
-    "price": 29500
+    "price": 29500,
   },
   {
     "article": `RO111111`,
@@ -29,7 +27,6 @@ export default [
     "rating": 5,
     "reviews": 21,
     "strings": 4,
-    "count": 1,
     "price": 6800
   },
   {
@@ -40,7 +37,6 @@ export default [
     "rating": 5,
     "reviews": 15,
     "strings": 6,
-    "count": 1,
     "price": 30000
   },
   {
@@ -51,7 +47,6 @@ export default [
     "rating": 5,
     "reviews": 5,
     "strings": 7,
-    "count": 1,
     "price": 3500
   },
   {
@@ -62,7 +57,6 @@ export default [
     "rating": 5,
     "reviews": 17,
     "strings": 6,
-    "count": 1,
     "price": 15300
   },
   {
@@ -73,7 +67,6 @@ export default [
     "rating": 5,
     "reviews": 5,
     "strings": 4,
-    "count": 1,
     "price": 2200
   },
   {
@@ -84,7 +77,6 @@ export default [
     "rating": 5,
     "reviews": 27,
     "strings": 4,
-    "count": 1,
     "price": 30000
   },
   {
@@ -95,7 +87,6 @@ export default [
     "rating": 5,
     "reviews": 3,
     "strings": 7,
-    "count": 1,
     "price": 1700
   },
   {
@@ -106,7 +97,6 @@ export default [
     "rating": 5,
     "reviews": 20,
     "strings": 4,
-    "count": 1,
     "price": 23000
   },
   {
@@ -117,7 +107,6 @@ export default [
     "rating": 5,
     "reviews": 19,
     "strings": 4,
-    "count": 1,
     "price": 18700
   },
   {
@@ -128,7 +117,6 @@ export default [
     "rating": 5,
     "reviews": 30,
     "strings": 7,
-    "count": 1,
     "price": 35000
   },
   {
@@ -139,7 +127,6 @@ export default [
     "rating": 5,
     "reviews": 28,
     "strings": 6,
-    "count": 1,
     "price": 14900
   },
   {
@@ -150,7 +137,6 @@ export default [
     "rating": 5,
     "reviews": 7,
     "strings": 6,
-    "count": 1,
     "price": 7600
   },
   {
@@ -161,7 +147,6 @@ export default [
     "rating": 5,
     "reviews": 19,
     "strings": 6,
-    "count": 1,
     "price": 6500
   },
   {
@@ -172,7 +157,6 @@ export default [
     "rating": 5,
     "reviews": 26,
     "strings": 7,
-    "count": 1,
     "price": 12000
   },
   {
@@ -183,7 +167,6 @@ export default [
     "rating": 5,
     "reviews": 31,
     "strings": 7,
-    "count": 1,
     "price": 9900
   },
   {
@@ -205,7 +188,6 @@ export default [
     "rating": 5,
     "reviews": 34,
     "strings": 12,
-    "count": 1,
     "price": 10500
   },
   {
@@ -216,7 +198,6 @@ export default [
     "rating": 5,
     "reviews": 9,
     "strings": 6,
-    "count": 1,
     "price": 13300
   },
   {
@@ -227,7 +208,6 @@ export default [
     "rating": 5,
     "reviews": 37,
     "strings": 4,
-    "count": 1,
     "price": 4800
   },
   {
@@ -238,7 +218,6 @@ export default [
     "rating": 5,
     "reviews": 5,
     "strings": 4,
-    "count": 1,
     "price": 1900
   },
   {
@@ -249,7 +228,6 @@ export default [
     "rating": 5,
     "reviews": 23,
     "strings": 4,
-    "count": 1,
     "price": 2500
   },
   {
@@ -260,7 +238,6 @@ export default [
     "rating": 5,
     "reviews": 3,
     "strings": 4,
-    "count": 1,
     "price": 3800
   },
   {
@@ -271,7 +248,6 @@ export default [
     "rating": 5,
     "reviews": 10,
     "strings": 4,
-    "count": 1,
     "price": 4100
   },
   {
@@ -282,7 +258,6 @@ export default [
     "rating": 5,
     "reviews": 14,
     "strings": 4,
-    "count": 1,
     "price": 2700
   },
   {
@@ -293,7 +268,6 @@ export default [
     "rating": 5,
     "reviews": 29,
     "strings": 4,
-    "count": 1,
     "price": 6700
   },
 ];

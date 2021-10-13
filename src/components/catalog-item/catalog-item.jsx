@@ -3,19 +3,19 @@ import PropTypes from 'prop-types';
 import {useDispatch} from "react-redux";
 
 import Rating from "../rating/rating";
-import {openModal} from '../../store/modalSlise';
+// import {openModal} from '../../store/modalSlise';
 import {dataObject} from "../../store/objectSlise";
 
 
 function CatalogItem({...props}) {
-  const {item} = props;
+  const {item, onAddModal} = props;
   const dispatch = useDispatch();
 
-  const onClickOpenModal = (evt) => {
-    evt.preventDefault();
-    dispatch(openModal());
+  const onClickOpenModal = () => {
     dispatch(dataObject(item));
+    onAddModal(true);
   };
+
 
   return (
     <>
@@ -33,7 +33,7 @@ function CatalogItem({...props}) {
         </div>
         <div className="catalog__item-btns">
           <button className="catalog__item-btn-more" type="button">Подробнее</button>
-          <button className="catalog__item-btn-buy" onClick={onClickOpenModal} type="button">Купить</button>
+          <button className="catalog__item-btn-buy" type="button" onClick={onClickOpenModal}>Купить</button>
         </div>
       </li>
     </>
@@ -42,6 +42,7 @@ function CatalogItem({...props}) {
 
 CatalogItem.propTypes = {
   item: PropTypes.object,
+  onAddModal: PropTypes.func,
 };
 
 export default CatalogItem;

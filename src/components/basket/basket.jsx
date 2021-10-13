@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from "react-router-dom";
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
 
-// import {discont} from "../../store/basketSlise";
+import {addTotalCount} from "../../store/basketSlise";
 
 import Footer from '../footer/footer';
 import Header from '../header/header';
@@ -11,21 +11,51 @@ import RemoveModal from "../remove-modal/remove-modal";
 
 function Basket() {
 
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const baskets = useSelector((state) => state.basket.baskets);
   const [promoCode, setPromoCode] = useState(`GITARAHIT`);
+  const [sale, setSale] = useState(0);
   const [errorPromoCode, setErrorPromoCode] = useState(false);
+  const [removeModal, setRemoveModal] = useState(false);
 
+  // const NOT_SALE = 0;
+  const GITARAHIT_SALE = 0.1;
+  const SUPERGITARA_SALE = 700;
+  const GITARA2020_SALE = 0.3;
+  const GITARA2020_SALE_MAX = 3000;
+  const MAX_PERCENT = 100;
 
-  function totalBasketsPrice() {
-    let totalPrice = 0;
-    const summ = baskets.reduce(function (accumulator, item) {
-      return accumulator + item.totalPrice;
-    }, totalPrice);
-    return summ;
-  }
+  const MAX_SALE = (GITARA2020_SALE_MAX * MAX_PERCENT) / (GITARA2020_SALE * MAX_PERCENT);
 
-  let totalPriceBasket = totalBasketsPrice();
+  let initialTotalPrice = 0;
+  let saleCount = 0;
+
+  useEffect(() => {
+    renderTotalPrice();
+  }, [sale]);
+
+  // eslint-disable-next-line consistent-return
+  const countsSale = () => {
+
+    if (promoCode === `GITARAHIT`) {
+      saleCount = totalPrice * GITARAHIT_SALE;
+      setSale(saleCount);
+    }
+
+    if (promoCode === `SUPERGITARA`) {
+      saleCount = SUPERGITARA_SALE;
+      setSale(saleCount);
+    }
+
+    if (promoCode === `GITARA2020`) {
+      if (totalPrice < MAX_SALE) {
+        saleCount = totalPrice * GITARA2020_SALE;
+      } else {
+        saleCount = GITARA2020_SALE_MAX;
+      }
+      setSale(saleCount);
+    }
+  };
 
   const renderBasketItem = () => {
     if (baskets.length === 0) {
@@ -33,19 +63,32 @@ function Basket() {
     }
     return (baskets.map((item) => <BasketItem key={item.article}
       item={item}
+      onRemoveModal={setRemoveModal}
     />));
   };
 
+  let totalPrice = baskets.reduce((acc, totalSumm) => acc + totalSumm.totalPrice, initialTotalPrice);
+  let totalCount = baskets.reduce((acc, totalCouunt) => acc + totalCouunt.count, initialTotalPrice);
+
+  dispatch(addTotalCount(totalCount));
+
   const onButtonPromoClick = () => {
     onValidCode();
-    // eslint-disable-next-line no-console
-    console.log(errorPromoCode);
+    countsSale();
   };
 
   const onValidCode = () => {
-    if (promoCode === `GITARAHIT` || promoCode === `SUPERGITARA` || promoCode === `GITARA2020 `) {
+
+    if (promoCode === `GITARAHIT` || promoCode === `SUPERGITARA` || promoCode === `GITARA2020`) {
       setErrorPromoCode(false);
-    } setErrorPromoCode(true);
+    } else {
+      setErrorPromoCode(true);
+    }
+  };
+
+  const renderTotalPrice = () => {
+    totalPrice = totalPrice - sale;
+    return totalPrice;
   };
 
   return (
@@ -74,12 +117,13 @@ function Basket() {
             <p className="basket__promo-title">Промокод на скидку</p>
             <p className="basket__promo-text">Введите свой промокод, если он у вас есть.</p>
             <label className="basket__promo-label">
-              <input className="basket__promo-input" type="text" value={promoCode} onChange={(evt) => setPromoCode(evt.target.value)}/>
+              <span className={errorPromoCode ? `basket__promo-error basket__promo-error--active` : `basket__promo-error`}>код не действителен</span>
+              <input className="basket__promo-input" type="text" value={promoCode} onChange={(evt) => setPromoCode((evt.target.value))} />
             </label>
             <button className="basket__promo-btn" onClick={onButtonPromoClick}>Применить купон</button>
           </div>
           <div className="basket__control">
-            <p className="basket__control-total">Всего: {totalPriceBasket} ₽</p>
+            <p className="basket__control-total">Всего: {renderTotalPrice()} ₽</p>
             <button className="basket__control-submit">Оформить заказ</button>
 
           </div>
@@ -87,7 +131,7 @@ function Basket() {
 
       </main>
       <Footer />
-      <RemoveModal />
+      <RemoveModal removeModal={removeModal} onRemoveModal={setRemoveModal}/>
     </>
 
   );

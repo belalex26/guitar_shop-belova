@@ -2,17 +2,16 @@
 import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from "react-redux";
 
-import {openModalRemove, closeModalRemove} from "../../store/modalSlise";
-import {selectModalRemove} from '../../store/modalSlise';
 import {selectObject} from "../../store/objectSlise";
 import {removeBasket} from "../../store/basketSlise";
 
 const body = document.querySelector(`.body`);
 const ESC_PRESS = 27;
 
-const RemoveModal = () => {
+const RemoveModal = ({...props}) => {
+  const {removeModal, onRemoveModal} = props;
+
   const dispatch = useDispatch();
-  const modalActiveRemove = useSelector(selectModalRemove);
   const objectGuitar = useSelector(selectObject);
   const baskets = useSelector((state) => state.basket.baskets);
 
@@ -23,7 +22,7 @@ const RemoveModal = () => {
 
   const bodyScroll = () => {
     // eslint-disable-next-line react/prop-types
-    if (modalActiveRemove) {
+    if (removeModal) {
       body.style.overflow = `hidden`;
     }
     body.style.overflow = `auto`;
@@ -31,18 +30,18 @@ const RemoveModal = () => {
 
   const onClose = (evt) => {
     if (evt.keyCode === ESC_PRESS) {
-      dispatch(closeModalRemove());
+      onRemoveModal(false);
       bodyScroll();
     }
   };
 
   const onModalCloseClick = () => {
-    dispatch(closeModalRemove());
+    onRemoveModal(false);
     bodyScroll();
   };
 
   const onButtonRemoveClick = () => {
-    dispatch(closeModalRemove());
+    onRemoveModal(false);
     removeItemBasket();
   };
 
@@ -53,8 +52,8 @@ const RemoveModal = () => {
   };
 
   return (
-    <div className={modalActiveRemove ? `remove-modal remove-modal--active` : `remove-modal`} onClick={onModalCloseClick} role="dialog" tabIndex="-1" >
-      <section className={openModalRemove ? `remove-modal__callback remove-modal__callback--active` : `remove-modal__callback`} onClick={(evt) => evt.stopPropagation()}>
+    <div className={removeModal ? `remove-modal remove-modal--active` : `remove-modal`} onClick={onModalCloseClick} role="dialog" tabIndex="-1" >
+      <section className={removeModal ? `remove-modal__callback remove-modal__callback--active` : `remove-modal__callback`} onClick={(evt) => evt.stopPropagation()}>
         <h2 className="visually-hidden">Подтверждение</h2>
         <p className="remove-modal__title">Удалить этот товар?</p>
         <div className="remove-modal__info">

@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable react/prop-types */
 import React, {useEffect} from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
@@ -5,8 +7,10 @@ import {Link} from 'react-router-dom';
 const body = document.querySelector(`.body`);
 const ESC_PRESS = 27;
 
-const SuccessModal = ({...props}) => {
-  const {successModal, onOpenSuccessModal} = props;
+const SuccessModalInBasket = ({...props}) => {
+  const {successModalInBasket, onSuccessModalInBasket} = props;
+
+  console.log(props);
 
   useEffect(() => {
     document.addEventListener(`keydown`, onClose, {passive: true});
@@ -15,7 +19,7 @@ const SuccessModal = ({...props}) => {
 
   const bodyScroll = () => {
     // eslint-disable-next-line react/prop-types
-    if (successModal) {
+    if (successModalInBasket) {
       body.style.overflow = `hidden`;
     }
     body.style.overflow = `auto`;
@@ -23,20 +27,20 @@ const SuccessModal = ({...props}) => {
 
   const onClose = (evt) => {
     if (evt.keyCode === ESC_PRESS) {
-      onOpenSuccessModal(false);
+      onSuccessModalInBasket(false);
       bodyScroll();
     }
   };
 
   const onModalCloseClick = () => {
-    onOpenSuccessModal(false);
+    onSuccessModalInBasket(false);
     bodyScroll();
   };
 
   return (
-    <div className={successModal ? `success-modal success-modal--active` : `success-modal`} onClick={onModalCloseClick} role="dialog" tabIndex="-1" >
-      <section className={successModal ? `success-modal__callback success-modal__callback--active` : `success-modal__callback`} onClick={(evt) => evt.stopPropagation()}>
-        <p className="success-modal__title">Товар успешно добавлен в корзину</p>
+    <div className={successModalInBasket ? `success-modal success-modal--active` : `success-modal`} onClick={onModalCloseClick} role="dialog" tabIndex="-1" >
+      <section className={successModalInBasket ? `success-modal__callback success-modal__callback--active` : `success-modal__callback`} onClick={(evt) => evt.stopPropagation()}>
+        <p className="success-modal__title">Товар уже в корзине</p>
         <div className="success-modal__content">
           <Link className="success-modal__btn success-modal__btn--basket" to="/basket" onClick={onModalCloseClick}>Перейти в корзину</Link>
           <button className="success-modal__btn success-modal__btn--main" type="button" onClick={onModalCloseClick}>Продолжить покупки</button>
@@ -48,9 +52,9 @@ const SuccessModal = ({...props}) => {
 
 };
 
-SuccessModal.propTypes = {
-  successModal: PropTypes.bool,
-  onOpenSuccessModal: PropTypes.func,
+SuccessModalInBasket.propTypes = {
+  successModalInBasket: PropTypes.bool,
+  onSuccessModalInBasket: PropTypes.func,
 };
 
-export default SuccessModal;
+export default SuccessModalInBasket;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useSelector, useDispatch} from "react-redux";
 import ReactPaginate from 'react-paginate';
 
@@ -12,6 +12,9 @@ import AddModal from "../add-modal/add-modal";
 import SortPanel from "../sort-panel/sort-panel";
 
 function Catalog() {
+  const [addModal, setAddModal] = useState(false);
+  const [successModal, setSuccessModal] = useState(false);
+  const [successModalInBasket, setSuccessModalInBasket] = useState(false);
 
   const GUITARS_PER_PAGE = 9;
 
@@ -26,9 +29,6 @@ function Catalog() {
     pageCount = Math.ceil(guitarsCopy.length / GUITARS_PER_PAGE);
     return pageCount;
   };
-
-  // eslint-disable-next-line no-console
-  console.log(guitarsCopy);
 
   const pagesVisites = pageNumber * GUITARS_PER_PAGE;
 
@@ -46,10 +46,14 @@ function Catalog() {
         guitarsCopy.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
       .map((item) => <CatalogItem key={item.article}
         item={item}
+        addModal={addModal}
+        onAddModal={setAddModal}
       />));
     } return (guitars.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
       .map((item) => <CatalogItem key={item.article}
         item={item}
+        addModal={addModal}
+        onAddModal={setAddModal}
       />));
   };
 
@@ -81,10 +85,17 @@ function Catalog() {
           previousClassName={`catalog__pagination--prev`}
           nextClassName={`catalog__pagination--next`}
           disabledClassName={`catalog__pagination-controls--disabled`}
-
         />
       </section>
-      <AddModal />
+
+      <AddModal
+        addModal={addModal}
+        onAddModal={setAddModal}
+        successModal={successModal}
+        onOpenSuccessModal={setSuccessModal}
+        successModalInBasket={successModalInBasket}
+        onSuccessModalInBasket={setSuccessModalInBasket}
+      />
     </>
 
 
