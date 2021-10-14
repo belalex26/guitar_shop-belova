@@ -32,7 +32,7 @@ export default [
   {
     "article": `TK436457`,
     "name": `СURT T300`,
-    "image": `https://4.downloader.disk.yandex.ru/preview/24a433b63b0c57be34a402e8454894e1b6c1022822a41d52b264e19566444652/inf/9iGJRlVGAjW1fGs674tS1onOTnKe05f2ipUtqOFnez6fCUJy4Ik1I9QopipKwapVtRthF_BLPBKI6WjWPBhqhQ%3D%3D?uid=63084333&filename=curt-t300.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/ToHDrCD1ZxbUxv-0VKDGywGXzO2bMJ4cQJ9hwK7QsLjoD23rW3eMC6QC0Mns1fBEAAOg66EnfFOUgiSg_pqqnwfZf1BF34cOC_tVVhf5KyysEQ-j0QBAGu28dmkSttZ2rQsiNOcDVw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/ToHDrCD1ZxbUxv-0VKDGywGXzO2bMJ4cQJ9hwK7QsLjoD23rW3eMC6QC0Mns1fBEAAOg66EnfFOUgiSg_pqqnwfZf1BF34cOC_tVVhf5KyysEQ-j0QBAGu28dmkSttZ2rQsiNOcDVw=w68-h190-p-k`,
     "type": `Электрогитара`,
     "rating": 5,
     "reviews": 15,
@@ -42,7 +42,7 @@ export default [
   {
     "article": `DI192138`,
     "name": `Dania Super`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/c48c3705485859618423328ae0d1f768618685915a907cc18bd4d681e44a7564/inf/q1kWyMBMDDE26EwhM_iwu32yn3jODtv28xnrXaZSsLnAKvumjLWL5KqKkM_6vDsCGCr_82EU_RCtNVpD07mqXg%3D%3D?uid=63084333&filename=dania-super.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
     "rating": 5,
     "reviews": 5,
@@ -72,7 +72,7 @@ export default [
   {
     "article": `SO135646`,
     "name": `Честер Plus`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/f50f29d514555a50008f861d53c94303c60f98b95e136081f94a40087df2b4ce/inf/PUIOLthEx6qiGu-UGGHo34nOTnKe05f2ipUtqOFnez5YrDvFVC8OdGGUorku-IvNU4PtL14-yKyyNxjBuMWyXg%3D%3D?uid=63084333&filename=chester-plus.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/L0S5i5OrWV7vP8K_QuWpXLX_6wVsk4124Rf_6e53iutrRUT06EikN-aE2z9KUD7J6EoOxcmBPh0XOkJpR2TTfTjALaMtRsF-UrI28j4l83Ey4fQSV2mKILRp2d0mEcP3C8nOplpFmQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/L0S5i5OrWV7vP8K_QuWpXLX_6wVsk4124Rf_6e53iutrRUT06EikN-aE2z9KUD7J6EoOxcmBPh0XOkJpR2TTfTjALaMtRsF-UrI28j4l83Ey4fQSV2mKILRp2d0mEcP3C8nOplpFmQ=w84-h190-p-k`,
     "type": `Электрогитара`,
     "rating": 5,
     "reviews": 27,
@@ -82,7 +82,7 @@ export default [
   {
     "article": `VO154751`,
     "name": `Виолана 300`,
-    "image": `https://3.downloader.disk.yandex.ru/preview/54a76ffb45195a7caa5bdcacdb8fb96dc53a30124a0ce8a5c09a2291e9ba1b09/inf/q1kWyMBMDDE26EwhM_iwu32yn3jODtv28xnrXaZSsLnAKvumjLWL5KqKkM_6vDsCGCr_82EU_RCtNVpD07mqXg%3D%3D?uid=63084333&filename=violana-300.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
     "rating": 5,
     "reviews": 3,
