@@ -2,7 +2,7 @@ export default [
   {
     "article": `SO757575`,
     "name": `Честер Bass`,
-    "image": `https://getfile.dokpub.com/yandex/get/https://4.downloader.disk.yandex.ru/preview/17fc968469586115e1c8f6140d1d94802a9221ffdbad5fb2a1d20f04a811a573/inf/z48AD0wFFIVfxtHHoQbb7Ht_MYMZ9XODZeqaQtWwWix64iSpP5Sc_6Imi3_cqH6cJWWkPWwCW6iYqd4hmcu8SQ%3D%3D?uid=63084333&filename=chester-bass.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
     "rating": 5,
     "reviews": 15,
@@ -12,7 +12,7 @@ export default [
   {
     "article": `TK129049`,
     "name": `СURT Z300`,
-    "image": `https://getfile.dokpub.com/yandex/get/https://3.downloader.disk.yandex.ru/preview/90a1b42f5d752b91c33edce00054865120ae2bccdd86ad34ed7d401f7bb3281c/inf/LQPMzkduBymExMrH5GjAconOTnKe05f2ipUtqOFnez4_DGEMTs-vNmbku2rKNVA7haiMP9rhcd4KO7s65yTsbg%3D%3D?uid=63084333&filename=curt-z300.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/Lko3IgRQ0sw3dJhzkyQmJUGujitFwV6ly0wuckTmtqGszY-_VWhAqSRIKFToA9iEpvvLfp4EEasbGbePyiY4nr9ZrNhG6IXFeagJpmi9nHt_DGPjUO-j1cO9gdBlYdHcZg5dXhkLyg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/Lko3IgRQ0sw3dJhzkyQmJUGujitFwV6ly0wuckTmtqGszY-_VWhAqSRIKFToA9iEpvvLfp4EEasbGbePyiY4nr9ZrNhG6IXFeagJpmi9nHt_DGPjUO-j1cO9gdBlYdHcZg5dXhkLyg=w68-h190-p-k`,
     "type": `Электрогитара`,
     "rating": 5,
     "reviews": 9,
