@@ -112,7 +112,7 @@ export default [
   {
     "article": `SO123212`,
     "name": `Честер 7X`,
-    "image": `https://4.downloader.disk.yandex.ru/preview/e323a92bd49d112a48409e0ad37c47f22a502750af0e0cdc8be40750a0e9e7c4/inf/z48AD0wFFIVfxtHHoQbb7Ht_MYMZ9XODZeqaQtWwWix64iSpP5Sc_6Imi3_cqH6cJWWkPWwCW6iYqd4hmcu8SQ%3D%3D?uid=63084333&filename=electro.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
     "rating": 5,
     "reviews": 30,
