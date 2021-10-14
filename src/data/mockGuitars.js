@@ -22,7 +22,7 @@ export default [
   {
     "article": `RO111111`,
     "name": `Roman LX`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/852f03038106ced1634782a53713bd55156cc79f5bdd20b8314c5981dcf8cc38/inf/73DxFhWVFOoFlpXrW4mF-nt_MYMZ9XODZeqaQtWwWizg4mvcygCza4l0zf8kL_B9HMNV15l1JRd4crNGun2kSA%3D%3D?uid=63084333&filename=ukulele.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1903x969`,
+    "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
     "rating": 5,
     "reviews": 21,
@@ -52,7 +52,7 @@ export default [
   {
     "article": `SO934345`,
     "name": `Честер WX`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/d7e13f5b584a63a2c26ba56ed09a8d656f6d130ab0a5764f204fb8e646b109f7/inf/z48AD0wFFIVfxtHHoQbb7Ht_MYMZ9XODZeqaQtWwWix64iSpP5Sc_6Imi3_cqH6cJWWkPWwCW6iYqd4hmcu8SQ%3D%3D?uid=63084333&filename=chester-wx.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
     "rating": 5,
     "reviews": 17,
@@ -62,7 +62,7 @@ export default [
   {
     "article": `DI082347`,
     "name": `Dania VX`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/852f03038106ced1634782a53713bd55156cc79f5bdd20b8314c5981dcf8cc38/inf/73DxFhWVFOoFlpXrW4mF-nt_MYMZ9XODZeqaQtWwWizg4mvcygCza4l0zf8kL_B9HMNV15l1JRd4crNGun2kSA%3D%3D?uid=63084333&filename=ukulele.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1903x969`,
+    "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
     "rating": 5,
     "reviews": 5,
@@ -92,7 +92,7 @@ export default [
   {
     "article": `TK244556`,
     "name": `СURT Clasic`,
-    "image": `https://4.downloader.disk.yandex.ru/preview/e323a92bd49d112a48409e0ad37c47f22a502750af0e0cdc8be40750a0e9e7c4/inf/z48AD0wFFIVfxtHHoQbb7Ht_MYMZ9XODZeqaQtWwWix64iSpP5Sc_6Imi3_cqH6cJWWkPWwCW6iYqd4hmcu8SQ%3D%3D?uid=63084333&filename=electro.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
     "rating": 5,
     "reviews": 20,
@@ -102,7 +102,7 @@ export default [
   {
     "article": `TK134663`,
     "name": `СURT Z250`,
-    "image": `https://4.downloader.disk.yandex.ru/preview/e323a92bd49d112a48409e0ad37c47f22a502750af0e0cdc8be40750a0e9e7c4/inf/z48AD0wFFIVfxtHHoQbb7Ht_MYMZ9XODZeqaQtWwWix64iSpP5Sc_6Imi3_cqH6cJWWkPWwCW6iYqd4hmcu8SQ%3D%3D?uid=63084333&filename=electro.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
     "rating": 5,
     "reviews": 19,
@@ -122,8 +122,7 @@ export default [
   {
     "article": `SO123234`,
     "name": `Честер 6V`,
-    "image": `https://4.downloader.disk.yandex.ru/preview/e323a92bd49d112a48409e0ad37c47f22a502750af0e0cdc8be40750a0e9e7c4/inf/z48AD0wFFIVfxtHHoQbb7Ht_MYMZ9XODZeqaQtWwWix64iSpP5Sc_6Imi3_cqH6cJWWkPWwCW6iYqd4hmcu8SQ%3D%3D?uid=63084333&filename=electro.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
-    "type": `Электрогитара`,
+    "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "rating": 5,
     "reviews": 28,
     "strings": 6,
@@ -132,7 +131,7 @@ export default [
   {
     "article": `VO519510`,
     "name": `Виолана Mix`,
-    "image": `https://2.downloader.disk.yandex.ru/preview/c253789447de8fb1244583f2a19e352cd1d52aa41bc51931a6eb0b3de58025f6/inf/q1kWyMBMDDE26EwhM_iwu32yn3jODtv28xnrXaZSsLnAKvumjLWL5KqKkM_6vDsCGCr_82EU_RCtNVpD07mqXg%3D%3D?uid=63084333&filename=acoustic.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
     "rating": 5,
     "reviews": 7,
@@ -142,7 +141,7 @@ export default [
   {
     "article": `VO457369`,
     "name": `Виолана 250x`,
-    "image": `https://2.downloader.disk.yandex.ru/preview/c253789447de8fb1244583f2a19e352cd1d52aa41bc51931a6eb0b3de58025f6/inf/q1kWyMBMDDE26EwhM_iwu32yn3jODtv28xnrXaZSsLnAKvumjLWL5KqKkM_6vDsCGCr_82EU_RCtNVpD07mqXg%3D%3D?uid=63084333&filename=acoustic.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
     "rating": 5,
     "reviews": 19,
@@ -152,7 +151,7 @@ export default [
   {
     "article": `FB625903`,
     "name": `Фабио Лайт`,
-    "image": `https://2.downloader.disk.yandex.ru/preview/c253789447de8fb1244583f2a19e352cd1d52aa41bc51931a6eb0b3de58025f6/inf/q1kWyMBMDDE26EwhM_iwu32yn3jODtv28xnrXaZSsLnAKvumjLWL5KqKkM_6vDsCGCr_82EU_RCtNVpD07mqXg%3D%3D?uid=63084333&filename=acoustic.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
     "rating": 5,
     "reviews": 26,
@@ -162,7 +161,7 @@ export default [
   {
     "article": `FB576948`,
     "name": `Фабио L100`,
-    "image": `https://2.downloader.disk.yandex.ru/preview/c253789447de8fb1244583f2a19e352cd1d52aa41bc51931a6eb0b3de58025f6/inf/q1kWyMBMDDE26EwhM_iwu32yn3jODtv28xnrXaZSsLnAKvumjLWL5KqKkM_6vDsCGCr_82EU_RCtNVpD07mqXg%3D%3D?uid=63084333&filename=acoustic.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
     "rating": 5,
     "reviews": 31,
@@ -172,7 +171,7 @@ export default [
   {
     "article": `LU012032`,
     "name": `Liana Z200`,
-    "image": `https://2.downloader.disk.yandex.ru/preview/c253789447de8fb1244583f2a19e352cd1d52aa41bc51931a6eb0b3de58025f6/inf/q1kWyMBMDDE26EwhM_iwu32yn3jODtv28xnrXaZSsLnAKvumjLWL5KqKkM_6vDsCGCr_82EU_RCtNVpD07mqXg%3D%3D?uid=63084333&filename=acoustic.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
     "rating": 5,
     "reviews": 28,
@@ -183,7 +182,7 @@ export default [
   {
     "article": `LU546853`,
     "name": `Liana Z100`,
-    "image": `https://2.downloader.disk.yandex.ru/preview/c253789447de8fb1244583f2a19e352cd1d52aa41bc51931a6eb0b3de58025f6/inf/q1kWyMBMDDE26EwhM_iwu32yn3jODtv28xnrXaZSsLnAKvumjLWL5KqKkM_6vDsCGCr_82EU_RCtNVpD07mqXg%3D%3D?uid=63084333&filename=acoustic.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
     "rating": 5,
     "reviews": 34,
@@ -193,7 +192,7 @@ export default [
   {
     "article": `LU458283`,
     "name": `Liana Z300`,
-    "image": `https://2.downloader.disk.yandex.ru/preview/c253789447de8fb1244583f2a19e352cd1d52aa41bc51931a6eb0b3de58025f6/inf/q1kWyMBMDDE26EwhM_iwu32yn3jODtv28xnrXaZSsLnAKvumjLWL5KqKkM_6vDsCGCr_82EU_RCtNVpD07mqXg%3D%3D?uid=63084333&filename=acoustic.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1711x930`,
+    "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
     "rating": 5,
     "reviews": 9,
@@ -203,7 +202,7 @@ export default [
   {
     "article": `RO324341`,
     "name": `Roman RX`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/852f03038106ced1634782a53713bd55156cc79f5bdd20b8314c5981dcf8cc38/inf/73DxFhWVFOoFlpXrW4mF-nt_MYMZ9XODZeqaQtWwWizg4mvcygCza4l0zf8kL_B9HMNV15l1JRd4crNGun2kSA%3D%3D?uid=63084333&filename=ukulele.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1903x969`,
+    "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
     "rating": 5,
     "reviews": 37,
@@ -213,7 +212,7 @@ export default [
   {
     "article": `RO214235`,
     "name": `Roman TX`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/852f03038106ced1634782a53713bd55156cc79f5bdd20b8314c5981dcf8cc38/inf/73DxFhWVFOoFlpXrW4mF-nt_MYMZ9XODZeqaQtWwWizg4mvcygCza4l0zf8kL_B9HMNV15l1JRd4crNGun2kSA%3D%3D?uid=63084333&filename=ukulele.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1903x969`,
+    "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
     "rating": 5,
     "reviews": 5,
@@ -223,7 +222,7 @@ export default [
   {
     "article": `DI132414`,
     "name": `Dania U100`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/852f03038106ced1634782a53713bd55156cc79f5bdd20b8314c5981dcf8cc38/inf/73DxFhWVFOoFlpXrW4mF-nt_MYMZ9XODZeqaQtWwWizg4mvcygCza4l0zf8kL_B9HMNV15l1JRd4crNGun2kSA%3D%3D?uid=63084333&filename=ukulele.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1903x969`,
+    "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
     "rating": 5,
     "reviews": 23,
@@ -233,7 +232,7 @@ export default [
   {
     "article": `DI934754`,
     "name": `Dania WR`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/852f03038106ced1634782a53713bd55156cc79f5bdd20b8314c5981dcf8cc38/inf/73DxFhWVFOoFlpXrW4mF-nt_MYMZ9XODZeqaQtWwWizg4mvcygCza4l0zf8kL_B9HMNV15l1JRd4crNGun2kSA%3D%3D?uid=63084333&filename=ukulele.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1903x969`,
+    "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
     "rating": 5,
     "reviews": 3,
@@ -243,7 +242,7 @@ export default [
   {
     "article": `DI034292`,
     "name": `Dania LE`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/852f03038106ced1634782a53713bd55156cc79f5bdd20b8314c5981dcf8cc38/inf/73DxFhWVFOoFlpXrW4mF-nt_MYMZ9XODZeqaQtWwWizg4mvcygCza4l0zf8kL_B9HMNV15l1JRd4crNGun2kSA%3D%3D?uid=63084333&filename=ukulele.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1903x969`,
+    "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
     "rating": 5,
     "reviews": 10,
@@ -253,7 +252,7 @@ export default [
   {
     "article": `MI193214`,
     "name": `Mirana V10`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/852f03038106ced1634782a53713bd55156cc79f5bdd20b8314c5981dcf8cc38/inf/73DxFhWVFOoFlpXrW4mF-nt_MYMZ9XODZeqaQtWwWizg4mvcygCza4l0zf8kL_B9HMNV15l1JRd4crNGun2kSA%3D%3D?uid=63084333&filename=ukulele.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1903x969`,
+    "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
     "rating": 5,
     "reviews": 14,
@@ -263,7 +262,7 @@ export default [
   {
     "article": `VO043244`,
     "name": `Виолана Mini`,
-    "image": `https://1.downloader.disk.yandex.ru/preview/852f03038106ced1634782a53713bd55156cc79f5bdd20b8314c5981dcf8cc38/inf/73DxFhWVFOoFlpXrW4mF-nt_MYMZ9XODZeqaQtWwWizg4mvcygCza4l0zf8kL_B9HMNV15l1JRd4crNGun2kSA%3D%3D?uid=63084333&filename=ukulele.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=63084333&tknv=v2&size=1903x969`,
+    "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
     "rating": 5,
     "reviews": 29,
