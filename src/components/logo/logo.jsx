@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Logo() {
   return (
@@ -10,8 +10,6 @@ function Logo() {
       <line className="logo__line" x1="53" y1="46.8" x2="67" y2="46.8" strokeWidth="0.4"/>
       <line className="logo__line" x1="57" y1="50.8" x2="67" y2="50.8" strokeWidth="0.4"/>
     </svg>
-
-
   );
 }
 

@@ -2,11 +2,9 @@
 import React, {useEffect} from 'react';
 import {useSelector, useDispatch} from "react-redux";
 
+import {renderPrice, body, ESC_PRESS} from "../../utils";
 import {selectObject} from "../../store/objectSlise";
 import {removeBasket} from "../../store/basketSlise";
-
-const body = document.querySelector(`.body`);
-const ESC_PRESS = 27;
 
 const RemoveModal = ({...props}) => {
   const {removeModal, onRemoveModal} = props;
@@ -16,16 +14,19 @@ const RemoveModal = ({...props}) => {
   const baskets = useSelector((state) => state.basket.baskets);
 
   useEffect(() => {
+    bodyScroll();
+  });
+
+  useEffect(() => {
     document.addEventListener(`keydown`, onClose, {passive: true});
     return () => document.removeEventListener(`keydown`, onClose);
   });
 
   const bodyScroll = () => {
-    // eslint-disable-next-line react/prop-types
     if (removeModal) {
-      body.style.overflow = `hidden`;
+      return (body.style.overflow = `hidden`);
     }
-    body.style.overflow = `auto`;
+    return (body.style.overflow = `auto`);
   };
 
   const onClose = (evt) => {
@@ -62,7 +63,7 @@ const RemoveModal = ({...props}) => {
             <p className="remove-modal__info-name">{objectGuitar.name}</p>
             <p className="remove-modal__info-article">Артикул: {objectGuitar.article}</p>
             <p className="remove-modal__info-type">{objectGuitar.type}, {objectGuitar.strings}</p>
-            <p className="remove-modal__info-price">Цена: {objectGuitar.price} ₽</p>
+            <p className="remove-modal__info-price">Цена: {renderPrice(objectGuitar.price)} ₽</p>
           </div>
           <div className="remove-modal__control">
             <button className="remove-modal__btn remove-modal__btn--remove" type="button" onClick={onButtonRemoveClick}>Удалить товар</button>

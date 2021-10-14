@@ -1,28 +1,26 @@
-/* eslint-disable no-console */
-/* eslint-disable react/prop-types */
-import React, {useEffect} from 'react';
-import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
+import React, {useEffect} from "react";
+import PropTypes from "prop-types";
+import {Link} from "react-router-dom";
 
-const body = document.querySelector(`.body`);
-const ESC_PRESS = 27;
+import {body, ESC_PRESS} from "../../utils";
 
 const SuccessModalInBasket = ({...props}) => {
   const {successModalInBasket, onSuccessModalInBasket} = props;
-
-  console.log(props);
 
   useEffect(() => {
     document.addEventListener(`keydown`, onClose, {passive: true});
     return () => document.removeEventListener(`keydown`, onClose);
   });
 
+  useEffect(() => {
+    bodyScroll();
+  });
+
   const bodyScroll = () => {
-    // eslint-disable-next-line react/prop-types
     if (successModalInBasket) {
-      body.style.overflow = `hidden`;
+      return (body.style.overflow = `hidden`);
     }
-    body.style.overflow = `auto`;
+    return (body.style.overflow = `auto`);
   };
 
   const onClose = (evt) => {
@@ -43,13 +41,12 @@ const SuccessModalInBasket = ({...props}) => {
         <p className="success-modal__title">Товар уже в корзине</p>
         <div className="success-modal__content">
           <Link className="success-modal__btn success-modal__btn--basket" to="/basket" onClick={onModalCloseClick}>Перейти в корзину</Link>
-          <button className="success-modal__btn success-modal__btn--main" type="button" onClick={onModalCloseClick}>Продолжить покупки</button>
+          <a className="success-modal__btn success-modal__btn--main" href="/" onClick={onModalCloseClick}>Продолжить покупки</a>
         </div>
         <button className="success-modal__close" aria-label="закрыть" onClick={onModalCloseClick}></button>
       </section>
     </div>
   );
-
 };
 
 SuccessModalInBasket.propTypes = {

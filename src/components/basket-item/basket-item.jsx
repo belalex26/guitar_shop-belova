@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import {useDispatch} from "react-redux";
 
+import {renderPrice} from "../../utils";
 import {updateBasket} from "../../store/basketSlise";
 import {dataObject} from "../../store/objectSlise";
 
@@ -12,7 +13,7 @@ function BasketItem({...props}) {
   let [countItem, setCountItem] = useState(1);
   let [totalPrice, setTotalPrice] = useState(0);
 
-  let totalPriceItem = item.price * countItem;
+  let totalPriceItem = Number(item.price * countItem);
   let tempTotal = {};
 
   useEffect(() => {
@@ -45,6 +46,7 @@ function BasketItem({...props}) {
     setCountItem(newCount);
   };
 
+
   tempTotal = {...item,
     count: countItem,
     totalPrice
@@ -59,13 +61,13 @@ function BasketItem({...props}) {
           <p className="basket__item-article-number">Артикул: {item.article}</p>
           <p className="basket__item-guitar-type">{item.type}, {item.strings}струнная </p>
         </div>
-        <p className="basket__item-guitar-price">{item.price} ₽</p>
+        <p className="basket__item-guitar-price">{renderPrice(item.price)} ₽</p>
         <div className="basket__item-btns">
           <button className="basket__item-btn basket__item-btn--prev" type="button" onClick={onPrevButtonClick}></button>
           <p className="basket__item-count">{countItem}</p>
           <button className="basket__item-btn basket__item-btn--next" type="button" onClick={onNextButtonClick}></button>
         </div>
-        <p className="basket__item-price-total">{totalPriceItem} ₽</p>
+        <p className="basket__item-price-total">{renderPrice(totalPrice)} ₽</p>
         <button className="basket__item-remove" type="button" aria-label="удалить товар" onClick={onClickRemoveModal}></button>
       </li>
     </>

@@ -1,6 +1,6 @@
-import React from 'react';
-import Logo from '../logo/logo';
-import SocialBar from '../social-bar/social-bar';
+import React from "react";
+import Logo from "../logo/logo";
+import SocialBar from "../social-bar/social-bar";
 
 function Footer() {
   return (

@@ -1,6 +1,6 @@
-import React from 'react';
-import Logo from '../logo/logo';
-import NavigationBar from '../navigation-bar/navigation-bar';
+import React from "react";
+import Logo from "../logo/logo";
+import NavigationBar from "../navigation-bar/navigation-bar";
 
 function Menu() {
   return (
@@ -9,7 +9,7 @@ function Menu() {
         <Logo />
         <ul className="menu__list">
           <li className="menu__item">
-            <a className="menu__link" href="/">
+            <a className="menu__link" href="/catalog">
               Каталог
             </a>
           </li>

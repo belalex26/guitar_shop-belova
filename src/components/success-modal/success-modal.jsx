@@ -1,12 +1,15 @@
-import React, {useEffect} from 'react';
-import PropTypes from 'prop-types';
-import {Link} from 'react-router-dom';
+import React, {useEffect} from "react";
+import PropTypes from "prop-types";
+import {Link} from "react-router-dom";
 
-const body = document.querySelector(`.body`);
-const ESC_PRESS = 27;
+import {body, ESC_PRESS} from "../../utils";
 
 const SuccessModal = ({...props}) => {
   const {successModal, onOpenSuccessModal} = props;
+
+  useEffect(() => {
+    bodyScroll();
+  });
 
   useEffect(() => {
     document.addEventListener(`keydown`, onClose, {passive: true});
@@ -14,11 +17,10 @@ const SuccessModal = ({...props}) => {
   });
 
   const bodyScroll = () => {
-    // eslint-disable-next-line react/prop-types
     if (successModal) {
-      body.style.overflow = `hidden`;
+      return (body.style.overflow = `hidden`);
     }
-    body.style.overflow = `auto`;
+    return (body.style.overflow = `auto`);
   };
 
   const onClose = (evt) => {

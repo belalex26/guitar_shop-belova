@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
-import ReactPaginate from 'react-paginate';
+import ReactPaginate from "react-paginate";
 
 import {selectGuitars} from "../../store/giutarsSlise";
 import {selectPagination} from "../../store/paginationSlise";

@@ -131,8 +131,8 @@ function SortPanel() {
           </label>
 
           <label className="sort-panel__direction--reviews"onClick={onDirectDownClick}>
-            <input className="sort-panel__direction-radio" type="radio" name="direction" readOnly/>
-            <span className="sort-panel__direction-icon sort-panel__direction-icon--down" aria-label="по убыванию" value="down"></span>
+            <input className="sort-panel__direction-radio" type="radio" name="direction" readOnly value="down"/>
+            <span className="sort-panel__direction-icon sort-panel__direction-icon--down" aria-label="по убыванию"></span>
           </label>
 
         </div>

@@ -25,6 +25,7 @@ function Filters() {
   const guitars = useSelector(selectGuitars);
   let guitarsCopy = guitars;
 
+
   if (guitarsCopy.length < 0) {
     guitarsCopy = guitars;
     filterArr = guitarsCopy;
@@ -85,15 +86,15 @@ function Filters() {
   };
 
   if (selectUculeleCheckbox) {
-    type.push(`укулеле`);
+    type.push(`Укулеле`);
   }
 
   if (selectElectroCheckbox) {
-    type.push(`электрогитара`);
+    type.push(`Электрогитара`);
   }
 
   if (selectAcousticCheckbox) {
-    type.push(`акустическая гитара`);
+    type.push(`Акустическая гитара`);
   }
 
   // strings checkbox onChange
@@ -215,9 +216,6 @@ function Filters() {
     type,
     strings
   };
-
-  // eslint-disable-next-line no-console
-  console.log(filterData);
 
   // фильтр по цене
 

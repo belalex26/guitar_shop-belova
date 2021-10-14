@@ -1,10 +1,11 @@
-import React, {useEffect} from 'react';
+import React, {useEffect} from "react";
 import {useSelector, useDispatch} from "react-redux";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 import {selectObject} from "../../store/objectSlise";
 import {addBasket} from "../../store/basketSlise";
 
+import {renderPrice, body, ESC_PRESS} from "../../utils";
 import SuccessModal from "../success-modal/success-modal";
 import SuccessModalInBasket from "../success-modal/success-modal-in-basket";
 
@@ -12,14 +13,9 @@ const AddModal = ({...props}) => {
   const {addModal, onAddModal, successModal, onOpenSuccessModal, successModalInBasket, onSuccessModalInBasket} = props;
 
   const dispatch = useDispatch();
-
-  let itemInBasket = false;
-
-  const body = document.querySelector(`.body`);
-  const ESC_PRESS = 27;
-
   const itemBasket = useSelector(selectObject);
   const baskets = useSelector((state) => state.basket.baskets);
+  let itemInBasket = false;
 
   useEffect(() => {
     bodyScroll();
@@ -64,7 +60,6 @@ const AddModal = ({...props}) => {
     }
   };
 
-
   return (
     <>
       <div className={addModal ? `add-modal add-modal--active` : `add-modal`} onClick={onModalCloseClick} role="dialog" tabIndex="-1" >
@@ -79,7 +74,7 @@ const AddModal = ({...props}) => {
               <p className="add-modal__info-name">{itemBasket.name}</p>
               <p className="add-modal__info-article">Артикул: {itemBasket.article}</p>
               <p className="add-modal__info-type">{itemBasket.type}, {itemBasket.strings} струнная</p>
-              <p className="add-modal__info-price">Цена: {itemBasket.price}</p>
+              <p className="add-modal__info-price">Цена: {renderPrice(itemBasket.price)} ₽</p>
             </div>
             <button className="add-modal__btn" type="button" onClick={onButtonBuyClick}>Добавить в корзину</button>
           </div>
@@ -95,7 +90,6 @@ const AddModal = ({...props}) => {
         successModalInBasket={successModalInBasket}
         onSuccessModalInBasket={onSuccessModalInBasket}
       />
-
     </>
   );
 };
@@ -108,6 +102,5 @@ AddModal.propTypes = {
   successModalInBasket: PropTypes.bool,
   onSuccessModalInBasket: PropTypes.func,
 };
-
 
 export default AddModal;
