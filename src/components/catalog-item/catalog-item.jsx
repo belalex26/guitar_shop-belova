@@ -30,7 +30,7 @@ function CatalogItem({...props}) {
           <p className="catalog__item-price">{renderPrice(item.price)} ₽</p>
         </div>
         <div className="catalog__item-btns">
-          <a href="/id:" className="catalog__item-btn-more" type="button">Подробнее</a>
+          <a href="/id:" className="catalog__item-btn-more">Подробнее</a>
           <button className="catalog__item-btn-buy" type="button" onClick={onClickOpenModal}>Купить</button>
         </div>
       </li>
