@@ -1,38 +1,71 @@
 import React, {useState} from "react";
 import {Link} from "react-router-dom";
-import {useSelector, useDispatch} from "react-redux";
+import {useSelector} from "react-redux";
 
-import {addTotalCount} from "../../store/basketSlise";
+import {selectGuitars} from "../../store/giutarsSlise";
+import {selectCard} from "../../store/cardSlise";
 
 import {GITARAHIT_SALE, SUPERGITARA_SALE, GITARA2020_SALE, GITARA2020_SALE_MAX, MAX_SALE, renderPrice} from "../../utils";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 import BasketItem from "../basket-item/basket-item";
-import RemoveModal from "../remove-modal/remove-modal";
+import Modal from "../modal/modal";
+import RemoveContent from "../remove-content/remove-content";
+
 
 function Basket() {
 
   const NOT_SALE = 0;
-  const dispatch = useDispatch();
-  const baskets = useSelector((state) => state.basket.baskets);
+  // const dispatch = useDispatch();
+  const [totaPriceItem, setTotaPriceItem] = useState([]);
   const [promoCode, setPromoCode] = useState(`GITARAHIT`);
   const [sale, setSale] = useState(0);
   const [saleCheck, setSaleCheck] = useState(false);
   const [errorPromoCode, setErrorPromoCode] = useState(false);
-  const [removeModal, setRemoveModal] = useState(false);
 
-  let initialTotalPrice = 0;
+  const [removeModal, setRemoveModal] = useState(false);
+  const guitars = useSelector(selectGuitars);
+  const cart = useSelector(selectCard);
+  const cards = Object.keys(cart);
+  const counts = Object.values(cart);
+  const INIT_PRICE = 0;
+
+  let guitarObg = guitars.reduce((acc, itemGuitar) => {
+    acc[itemGuitar[`articul`]] = itemGuitar;
+    return acc;
+  }, {});
+
+  // расчет итоговой цены
+
+  let result = guitars.filter((item) => cards.some((art) => item.articul.includes(art)));
+
+  function multiply(a, b) {
+    let c = [];
+    for (let i = 0; i < a.length; i++) {
+      c.push(a[i] * b[i].price);
+    }
+    return c;
+  }
+
+  const countPrice = () => {
+    let totalPrice = INIT_PRICE;
+    if (cards.length > 0) {
+      let totalPriceItem = multiply(counts, result);
+      totalPrice = totalPriceItem.reduce((sum, current) => sum + current);
+    }
+    return totalPrice;
+  };
+
+  let countsPrice = countPrice();
+
+  // расчет скидки
+
   let saleCount = 0;
 
-  let totalPrice = baskets.reduce((acc, totalSumm) => acc + totalSumm.totalPrice, initialTotalPrice);
-  let totalCount = baskets.reduce((acc, totalCouunt) => acc + totalCouunt.count, saleCount);
-
-
-  // eslint-disable-next-line consistent-return
   const countsSale = () => {
 
     if (promoCode === `GITARAHIT`) {
-      saleCount = totalPrice * GITARAHIT_SALE;
+      saleCount = countsPrice * GITARAHIT_SALE;
       setSale(saleCount);
     }
 
@@ -42,8 +75,8 @@ function Basket() {
     }
 
     if (promoCode === `GITARA2020`) {
-      if (totalPrice < MAX_SALE) {
-        saleCount = totalPrice * GITARA2020_SALE;
+      if (countsPrice < MAX_SALE) {
+        saleCount = countsPrice * GITARA2020_SALE;
       } else {
         saleCount = GITARA2020_SALE_MAX;
       }
@@ -54,22 +87,6 @@ function Basket() {
       setSale(sale);
     }
   };
-
-  const renderBasketItem = () => {
-    if (baskets.length === 0) {
-      return (
-        <p className="basket__list-text">
-          Пока пусто
-        </p>
-      );
-    }
-    return (baskets.map((item) => <BasketItem key={item.article}
-      item={item}
-      onRemoveModal={setRemoveModal}
-    />));
-  };
-
-  dispatch(addTotalCount(totalCount));
 
   const onButtonPromoClick = () => {
     onValidCode();
@@ -92,14 +109,8 @@ function Basket() {
   };
 
   const renderTotalPrice = () => {
-    totalPrice = Number(totalPrice - sale);
-    return totalPrice;
-  };
-
-  const formatPrice = () => {
-    renderTotalPrice();
-    let formatPriceTotal = renderPrice(totalPrice);
-    return formatPriceTotal;
+    countsPrice = Number(countsPrice - sale);
+    return (renderPrice(countsPrice));
   };
 
   return (
@@ -121,7 +132,18 @@ function Basket() {
           </ul>
 
           <ul className="basket__list">
-            {renderBasketItem()}
+            { cards.length === 0
+              ?
+              <p basket__list-text>Пока пусто</p>
+              :
+              Object.keys(cart).map((item) => <BasketItem key={guitarObg[item][`articule`]}
+                basketItem={guitarObg[item]}
+                count={cart[item]}
+                onRemoveModal={setRemoveModal}
+                totaPriceItem={totaPriceItem}
+                onTotaPriceItem={setTotaPriceItem}
+              />)
+            }
           </ul>
 
           <div className="basket__promo">
@@ -129,18 +151,21 @@ function Basket() {
             <p className="basket__promo-text">Введите свой промокод, если он у вас есть.</p>
             <label className="basket__promo-label">
               <span className={errorPromoCode ? `basket__promo-error basket__promo-error--active` : `basket__promo-error`}>код не действителен</span>
-              <input className="basket__promo-input" type="text" value={promoCode} onChange={onChangePromoCode} />
+              <input className="basket__promo-input" type="text" onChange={onChangePromoCode}/>
             </label>
+            <span className={saleCheck ? `basket__promo-check basket__promo-check--active` : `basket__promo-check`}>промокод применен</span>
             <button className="basket__promo-btn" onClick={onButtonPromoClick}>Применить купон</button>
           </div>
           <div className="basket__control">
-            <p className="basket__control-total">Всего: {formatPrice()} ₽</p>
+            <p className="basket__control-total">Всего: {renderTotalPrice()} ₽</p>
             <a className="basket__control-submit" href="/success">Оформить заказ</a>
           </div>
         </div>
       </main>
       <Footer />
-      <RemoveModal removeModal={removeModal} onRemoveModal={setRemoveModal}/>
+      <Modal modalActive={removeModal} onModalActive={setRemoveModal}>
+        <RemoveContent onModalActive={setRemoveModal}/>
+      </Modal>
     </>
 
   );

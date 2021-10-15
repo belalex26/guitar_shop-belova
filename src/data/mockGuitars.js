@@ -1,6 +1,6 @@
 export default [
   {
-    "article": `SO757575`,
+    "articul": `SO757575`,
     "name": `Честер Bass`,
     "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
@@ -10,7 +10,7 @@ export default [
     "price": 17500,
   },
   {
-    "article": `TK129049`,
+    "articul": `TK129049`,
     "name": `СURT Z300`,
     "image": `https://lh3.googleusercontent.com/Lko3IgRQ0sw3dJhzkyQmJUGujitFwV6ly0wuckTmtqGszY-_VWhAqSRIKFToA9iEpvvLfp4EEasbGbePyiY4nr9ZrNhG6IXFeagJpmi9nHt_DGPjUO-j1cO9gdBlYdHcZg5dXhkLyg=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/Lko3IgRQ0sw3dJhzkyQmJUGujitFwV6ly0wuckTmtqGszY-_VWhAqSRIKFToA9iEpvvLfp4EEasbGbePyiY4nr9ZrNhG6IXFeagJpmi9nHt_DGPjUO-j1cO9gdBlYdHcZg5dXhkLyg=w68-h190-p-k`,
     "type": `Электрогитара`,
@@ -20,7 +20,7 @@ export default [
     "price": 29500,
   },
   {
-    "article": `RO111111`,
+    "articul": `RO111111`,
     "name": `Roman LX`,
     "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
@@ -30,7 +30,7 @@ export default [
     "price": 6800
   },
   {
-    "article": `TK436457`,
+    "articul": `TK436457`,
     "name": `СURT T300`,
     "image": `https://lh3.googleusercontent.com/ToHDrCD1ZxbUxv-0VKDGywGXzO2bMJ4cQJ9hwK7QsLjoD23rW3eMC6QC0Mns1fBEAAOg66EnfFOUgiSg_pqqnwfZf1BF34cOC_tVVhf5KyysEQ-j0QBAGu28dmkSttZ2rQsiNOcDVw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/ToHDrCD1ZxbUxv-0VKDGywGXzO2bMJ4cQJ9hwK7QsLjoD23rW3eMC6QC0Mns1fBEAAOg66EnfFOUgiSg_pqqnwfZf1BF34cOC_tVVhf5KyysEQ-j0QBAGu28dmkSttZ2rQsiNOcDVw=w68-h190-p-k`,
     "type": `Электрогитара`,
@@ -40,7 +40,7 @@ export default [
     "price": 30000
   },
   {
-    "article": `DI192138`,
+    "articul": `DI192138`,
     "name": `Dania Super`,
     "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
@@ -50,7 +50,7 @@ export default [
     "price": 3500
   },
   {
-    "article": `SO934345`,
+    "articul": `SO934345`,
     "name": `Честер WX`,
     "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
@@ -60,7 +60,7 @@ export default [
     "price": 15300
   },
   {
-    "article": `DI082347`,
+    "articul": `DI082347`,
     "name": `Dania VX`,
     "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
@@ -70,7 +70,7 @@ export default [
     "price": 2200
   },
   {
-    "article": `SO135646`,
+    "articul": `SO135646`,
     "name": `Честер Plus`,
     "image": `https://lh3.googleusercontent.com/L0S5i5OrWV7vP8K_QuWpXLX_6wVsk4124Rf_6e53iutrRUT06EikN-aE2z9KUD7J6EoOxcmBPh0XOkJpR2TTfTjALaMtRsF-UrI28j4l83Ey4fQSV2mKILRp2d0mEcP3C8nOplpFmQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/L0S5i5OrWV7vP8K_QuWpXLX_6wVsk4124Rf_6e53iutrRUT06EikN-aE2z9KUD7J6EoOxcmBPh0XOkJpR2TTfTjALaMtRsF-UrI28j4l83Ey4fQSV2mKILRp2d0mEcP3C8nOplpFmQ=w84-h190-p-k`,
     "type": `Электрогитара`,
@@ -80,7 +80,7 @@ export default [
     "price": 30000
   },
   {
-    "article": `VO154751`,
+    "articul": `VO154751`,
     "name": `Виолана 300`,
     "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
@@ -90,7 +90,7 @@ export default [
     "price": 1700
   },
   {
-    "article": `TK244556`,
+    "articul": `TK244556`,
     "name": `СURT Clasic`,
     "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
@@ -100,7 +100,7 @@ export default [
     "price": 23000
   },
   {
-    "article": `TK134663`,
+    "articul": `TK134663`,
     "name": `СURT Z250`,
     "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
@@ -110,7 +110,7 @@ export default [
     "price": 18700
   },
   {
-    "article": `SO123212`,
+    "articul": `SO123212`,
     "name": `Честер 7X`,
     "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "type": `Электрогитара`,
@@ -120,7 +120,7 @@ export default [
     "price": 35000
   },
   {
-    "article": `SO123234`,
+    "articul": `SO123234`,
     "name": `Честер 6V`,
     "image": `https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/FBHqcpUgiYmuOu4wbNJ8BioJ7GwObRiFcIWzGjeJBsaRiN--mfK9J-nGMJ1PlwC13ZlGlX_tDk6QuwaEA6dd9z6_w8y7U4WSPSK3Y-P-I0bNExrCFgCQeTBR0Er_Nbrq6lL3DoWsEA=w80-h202-p-k`,
     "rating": 5,
@@ -129,7 +129,7 @@ export default [
     "price": 14900
   },
   {
-    "article": `VO519510`,
+    "articul": `VO519510`,
     "name": `Виолана Mix`,
     "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
@@ -139,7 +139,7 @@ export default [
     "price": 7600
   },
   {
-    "article": `VO457369`,
+    "articul": `VO457369`,
     "name": `Виолана 250x`,
     "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
@@ -149,7 +149,7 @@ export default [
     "price": 6500
   },
   {
-    "article": `FB625903`,
+    "articul": `FB625903`,
     "name": `Фабио Лайт`,
     "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
@@ -159,7 +159,7 @@ export default [
     "price": 12000
   },
   {
-    "article": `FB576948`,
+    "articul": `FB576948`,
     "name": `Фабио L100`,
     "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
@@ -169,7 +169,7 @@ export default [
     "price": 9900
   },
   {
-    "article": `LU012032`,
+    "articul": `LU012032`,
     "name": `Liana Z200`,
     "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
@@ -180,7 +180,7 @@ export default [
     "price": 8900
   },
   {
-    "article": `LU546853`,
+    "articul": `LU546853`,
     "name": `Liana Z100`,
     "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
@@ -190,7 +190,7 @@ export default [
     "price": 10500
   },
   {
-    "article": `LU458283`,
+    "articul": `LU458283`,
     "name": `Liana Z300`,
     "image": `https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/6HCrwY1zAujHGwYB-YzQFNL9BrkfWAquwg_1sjmH11XLd8YqZhGQdt3xXPav8LI6cThx9OhWzTmQmlHY9xPWQ7ZfH4J07Xoj-fRoV0rxBTEE2KCZQGEyV1LZ-du-tzDUlGlTdO2-tQ=w68-h190-p-k`,
     "type": `Акустическая гитара`,
@@ -200,7 +200,7 @@ export default [
     "price": 13300
   },
   {
-    "article": `RO324341`,
+    "articul": `RO324341`,
     "name": `Roman RX`,
     "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
@@ -210,7 +210,7 @@ export default [
     "price": 4800
   },
   {
-    "article": `RO214235`,
+    "articul": `RO214235`,
     "name": `Roman TX`,
     "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
@@ -220,7 +220,7 @@ export default [
     "price": 1900
   },
   {
-    "article": `DI132414`,
+    "articul": `DI132414`,
     "name": `Dania U100`,
     "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
@@ -230,7 +230,7 @@ export default [
     "price": 2500
   },
   {
-    "article": `DI934754`,
+    "articul": `DI934754`,
     "name": `Dania WR`,
     "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
@@ -240,7 +240,7 @@ export default [
     "price": 3800
   },
   {
-    "article": `DI034292`,
+    "articul": `DI034292`,
     "name": `Dania LE`,
     "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
@@ -250,7 +250,7 @@ export default [
     "price": 4100
   },
   {
-    "article": `MI193214`,
+    "articul": `MI193214`,
     "name": `Mirana V10`,
     "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,
@@ -260,7 +260,7 @@ export default [
     "price": 2700
   },
   {
-    "article": `VO043244`,
+    "articul": `VO043244`,
     "name": `Виолана Mini`,
     "image": `https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/oLNoMGe9ni32Z817soQcoTturvBd5RZKY6PgPDrR62FhGL2bPSqI4_n6i88N6YJFhPSdqbKsUxuMni7zWiXolCNcEYBbYAfWR2hdLvoM13FHezQWy0Vy7hYCN84PUHRHrHHKeWERXA=w68-h190-p-k`,
     "type": `Укулеле`,

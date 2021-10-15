@@ -1,18 +1,26 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {useDispatch} from "react-redux";
+
+import {dataObject} from "../../store/objectSlise";
 
 import {renderPrice} from "../../utils";
 import Rating from "../rating/rating";
-import {dataObject} from "../../store/objectSlise";
+import {useDispatch} from "react-redux";
+
 
 function CatalogItem({...props}) {
-  const {item, onAddModal} = props;
+  const {item, onModalActive} = props;
+
   const dispatch = useDispatch();
 
-  const onClickOpenModal = () => {
-    dispatch(dataObject(item));
-    onAddModal(true);
+  const onClickBuy = (evt) => {
+    onModalActive(true);
+    let target = evt.target;
+    let objArticul = target.getAttribute(`data-key`);
+    let temp = {
+      id: objArticul
+    };
+    dispatch(dataObject(temp));
   };
 
   return (
@@ -31,7 +39,7 @@ function CatalogItem({...props}) {
         </div>
         <div className="catalog__item-btns">
           <a href="/id:" className="catalog__item-btn-more">Подробнее</a>
-          <button className="catalog__item-btn-buy" type="button" onClick={onClickOpenModal}>Купить</button>
+          <button className="catalog__item-btn-buy" type="button" data-key={item.articul} onClick={onClickBuy}>Купить</button>
         </div>
       </li>
     </>
@@ -40,7 +48,7 @@ function CatalogItem({...props}) {
 
 CatalogItem.propTypes = {
   item: PropTypes.object,
-  onAddModal: PropTypes.func,
+  onModalActive: PropTypes.func,
 };
 
 export default CatalogItem;

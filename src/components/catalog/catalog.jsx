@@ -5,16 +5,17 @@ import ReactPaginate from "react-paginate";
 import {selectGuitars} from "../../store/giutarsSlise";
 import {selectPagination} from "../../store/paginationSlise";
 import {selectPage} from "../../store/paginationSlise";
-import {selectFilter} from "../../store/filterSlise";
+// import {selectFilter} from "../../store/filterSlise";
 
 import CatalogItem from "../catalog-item/catalog-item";
-import AddModal from "../add-modal/add-modal";
-import SortPanel from "../sort-panel/sort-panel";
+import Modal from "../modal/modal";
+import AddContent from "../add-content/add-content";
+// import SortPanel from "../sort-panel/sort-panel";
 
 function Catalog() {
-  const [addModal, setAddModal] = useState(false);
-  const [successModal, setSuccessModal] = useState(false);
-  const [successModalInBasket, setSuccessModalInBasket] = useState(false);
+  const [modalActive, setModalActive] = useState(false);
+  // const [successModal, setSuccessModal] = useState(false);
+  // const [successModalInBasket, setSuccessModalInBasket] = useState(false);
 
   const GUITARS_PER_PAGE = 9;
 
@@ -23,10 +24,9 @@ function Catalog() {
   const dispatch = useDispatch();
 
   let pageCount = 1;
-  let guitarsCopy = useSelector(selectFilter);
 
   const renderPageCount = () => {
-    pageCount = Math.ceil(guitarsCopy.length / GUITARS_PER_PAGE);
+    pageCount = Math.ceil(guitars.length / GUITARS_PER_PAGE);
     return pageCount;
   };
 
@@ -36,25 +36,17 @@ function Catalog() {
     dispatch(selectPage(selected));
   };
 
+  // eslint-disable-next-line consistent-return
   // отрисовка основного массива
 
   const renderGuitars = () => {
     renderPageCount();
-
-    if (guitarsCopy.length > 0) {
-      return (
-        guitarsCopy.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
-      .map((item) => <CatalogItem key={item.article}
-        item={item}
-        addModal={addModal}
-        onAddModal={setAddModal}
-      />));
-    } return (guitars.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
-      .map((item) => <CatalogItem key={item.article}
-        item={item}
-        addModal={addModal}
-        onAddModal={setAddModal}
-      />));
+    return (
+      guitars.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
+    .map((item) => <CatalogItem key={item.articul}
+      item={item}
+      onModalActive={setModalActive}
+    />));
   };
 
   let guitarPage = renderGuitars();
@@ -63,9 +55,11 @@ function Catalog() {
     <>
       <section className="catalog">
         <div className="catalog__sort-panel sort-panel" >
+          {/*
           <SortPanel
             renderGuitars={renderGuitars}
           />
+          */}
         </div>
         <ul className="catalog__list">
           {guitarPage}
@@ -88,14 +82,12 @@ function Catalog() {
         />
       </section>
 
-      <AddModal
-        addModal={addModal}
-        onAddModal={setAddModal}
-        successModal={successModal}
-        onOpenSuccessModal={setSuccessModal}
-        successModalInBasket={successModalInBasket}
-        onSuccessModalInBasket={setSuccessModalInBasket}
-      />
+      <Modal
+        modalActive={modalActive}
+        onModalActive={setModalActive}
+      >
+        <AddContent onModalAddActive={setModalActive}/>
+      </Modal>
     </>
 
 

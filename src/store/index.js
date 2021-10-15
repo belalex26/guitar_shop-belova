@@ -7,21 +7,25 @@ import thunk from "redux-thunk";
 import guitarsSlise from "./giutarsSlise";
 import objectSlise from "./objectSlise";
 import paginationSlise from "./paginationSlise";
-import filtersSliseType from "./filtersSliseType";
-import filtersSliseStringsCheck from "./filtersStringsCheck";
-import filtersSliseStringsDisable from "./filtersStringsDisable";
-import basketSlise from "./basketSlise";
-import filtersSlise from "./filterSlise";
+// import filtersSliseType from "./filtersSliseType";
+// import filtersSliseStringsCheck from "./filtersStringsCheck";
+// import filtersSliseStringsDisable from "./filtersStringsDisable";
+// import basketSlise from "./basketSlise";
+// import filtersSlise from "./filterSlise";
+
+import cardSlise from "./cardSlise";
 
 const reducers = combineReducers({
   guitars: guitarsSlise,
+  card: cardSlise,
+
   object: objectSlise,
-  basket: basketSlise,
+  // basket: basketSlise,
   pagination: paginationSlise,
-  filterType: filtersSliseType,
-  filterStrings: filtersSliseStringsCheck,
-  filterStringsDisable: filtersSliseStringsDisable,
-  filter: filtersSlise,
+  // filterType: filtersSliseType,
+  // filterStrings: filtersSliseStringsCheck,
+  // filterStringsDisable: filtersSliseStringsDisable,
+  // filter: filtersSlise,
 });
 
 const persistConfig = {
