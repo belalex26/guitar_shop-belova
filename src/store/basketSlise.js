@@ -23,7 +23,7 @@ export const basketSlise = createSlice({
 });
 
 export const {addBasket, removeBasket, updateBasket, addTotalCount} = basketSlise.actions;
-export const Baskets = (state) => state.basket.baskets;
+export const baskets = (state) => state.basket.baskets;
 export const basketTotal = (state) => state.basket.totalCount;
 
 export default basketSlise.reducer;

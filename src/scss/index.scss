@@ -9,12 +9,16 @@
 @import '../components/filters/filters.scss';
 @import '../components/navigation-bar/navigation-bar.scss';
 @import '../components/footer/footer.scss';
-@import '../components/add-modal/add-modal.scss';
-@import '../components/remove-modal/remove-modal.scss';
+@import '../components/add-content/add-content.scss';
+@import '../components/remove-content//remove-content.scss';
 @import '../components/sort-panel/sort-panel.scss';
 @import '../components/catalog-item/catalog-item.scss';
 @import '../components/rating/rating.scss';
 @import '../components/social-bar/social-bar.scss';
 @import '../components/basket/basket.scss';
 @import '../components/basket-item/basket-item.scss';
-@import '../components/success-modal/success-modal.scss';
+
+
+
+
+@import '../components/modal/modal.scss';

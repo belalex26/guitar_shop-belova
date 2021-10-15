@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import Catalog from "../catalog/catalog";
-import Filters from "../filters/filters";
+// import Filters from "../filters/filters";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 
@@ -24,7 +24,7 @@ function Main() {
             </li>
           </ul>
           <aside className="main__catalog-filters filters" >
-            <Filters />
+            {/* <Filters />*/}
           </aside>
           <Catalog />
         </section>

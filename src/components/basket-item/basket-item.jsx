@@ -1,34 +1,42 @@
 import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 import {renderPrice} from "../../utils";
-import {updateBasket} from "../../store/basketSlise";
+import {updateToCard, selectCard} from "../../store/cardSlise";
 import {dataObject} from "../../store/objectSlise";
 
 function BasketItem({...props}) {
-  const {item, onRemoveModal} = props;
+  const {basketItem, count, onRemoveModal} = props;
+
   const dispatch = useDispatch();
+  const cart = useSelector(selectCard);
 
-  let [countItem, setCountItem] = useState(1);
+  let [countItem, setCountItem] = useState(count);
   let [totalPrice, setTotalPrice] = useState(0);
+  let tempCount = {
+    ...cart,
+    [basketItem[`articul`]]: countItem,
+  };
 
-  let totalPriceItem = Number(item.price * countItem);
-  let tempTotal = {};
+  let totalPriceItem = Number(basketItem[`price`] * countItem);
 
   useEffect(() => {
     setTotalPrice(totalPriceItem);
   }, [totalPriceItem]);
 
   useEffect(() => {
-    dispatch(updateBasket(tempTotal));
-
-  }, [totalPrice, countItem]);
+    dispatch(updateToCard(tempCount));
+  }, [countItem]);
 
   const onClickRemoveModal = (evt) => {
-    evt.preventDefault();
+    let target = evt.target;
+    let objArticul = target.getAttribute(`data-key`);
+    let temp = {
+      id: objArticul
+    };
+    dispatch(dataObject(temp));
     onRemoveModal(true);
-    dispatch(dataObject(item));
   };
 
   const onPrevButtonClick = () => {
@@ -46,29 +54,23 @@ function BasketItem({...props}) {
     setCountItem(newCount);
   };
 
-
-  tempTotal = {...item,
-    count: countItem,
-    totalPrice
-  };
-
   return (
     <>
       <li className="basket__item">
-        <img className="basket__item-img" src={item.image} alt="фото товара"></img>
+        <img className="basket__item-img" src={basketItem[`image`]} alt="фото товара"></img>
         <div className="basket__item-info">
-          <h3 className="basket__item-title">{item.name}</h3>
-          <p className="basket__item-article-number">Артикул: {item.article}</p>
-          <p className="basket__item-guitar-type">{item.type}, {item.strings}струнная </p>
+          <h3 className="basket__item-title">{basketItem[`name`]}</h3>
+          <p className="basket__item-article-number">Артикул: {basketItem[`articul`]} </p>
+          <p className="basket__item-guitar-type">{basketItem[`type`]}, {basketItem[`strings`]} струнная </p>
         </div>
-        <p className="basket__item-guitar-price">{renderPrice(item.price)} ₽</p>
+        <p className="basket__item-guitar-price">{renderPrice(basketItem[`price`])} ₽</p>
         <div className="basket__item-btns">
-          <button className="basket__item-btn basket__item-btn--prev" type="button" onClick={onPrevButtonClick}></button>
+          <button className="basket__item-btn basket__item-btn--prev" onClick={onPrevButtonClick} type="button"></button>
           <p className="basket__item-count">{countItem}</p>
           <button className="basket__item-btn basket__item-btn--next" type="button" onClick={onNextButtonClick}></button>
         </div>
         <p className="basket__item-price-total">{renderPrice(totalPrice)} ₽</p>
-        <button className="basket__item-remove" type="button" aria-label="удалить товар" onClick={onClickRemoveModal}></button>
+        <button className="basket__item-remove" type="button" aria-label="удалить товар" data-key={basketItem[`articul`]} onClick={onClickRemoveModal}></button>
       </li>
     </>
 
@@ -76,7 +78,8 @@ function BasketItem({...props}) {
 }
 
 BasketItem.propTypes = {
-  item: PropTypes.object,
+  basketItem: PropTypes.object,
+  count: PropTypes.number,
   onRemoveModal: PropTypes.func,
 };
 
