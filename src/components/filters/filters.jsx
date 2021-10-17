@@ -97,6 +97,22 @@ function Filters() {
       setStr12Disable(true);
     }
 
+    if (str4Disable) {
+      setStr4(false);
+    }
+
+    if (str6Disable) {
+      setStr6(false);
+    }
+
+    if (str7Disable) {
+      setStr7(false);
+    }
+
+    if (str12Disable) {
+      setStr12(false);
+    }
+
   };
 
   const onShowBtnClick = () => {
