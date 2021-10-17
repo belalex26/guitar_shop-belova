@@ -50,7 +50,7 @@ const RemoveContent = ({...props}) => {
   let item = renderAddContent();
 
   return (
-    <>
+    <div className="remove-content">
       <h2 className="visually-hidden">Подтверждение</h2>
       <p className="remove-content__title">Удалить этот товар?</p>
       <div className="remove-content__info">
@@ -60,7 +60,7 @@ const RemoveContent = ({...props}) => {
           <button className="remove-content__btn remove-content__btn--close" type="button" onClick={() => onModalActive(false)}>Продолжить покупки</button>
         </div>
       </div>
-    </>
+    </div>
   );
 
 };

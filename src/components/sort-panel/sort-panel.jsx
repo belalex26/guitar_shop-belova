@@ -30,12 +30,12 @@ function SortPanel() {
       <div className="sort-panel__content">
 
         <div className="sort-panel__type">
-          <label className="sort-panel__type--price">
+          <label className="sort-panel__type-label sort-panel__type-label--price">
             <input className="sort-panel__type-radio" type="radio" name="sortType" onChange={() => setTypeSort(SORT_BY_PRICE)}/>
             <span className="sort-panel__type-text">по цене</span>
           </label>
 
-          <label className="sort-panel__type--reviews">
+          <label className="sort-panel__type-label sort-panel__type-label--reviews">
             <input className="sort-panel__type-radio" type="radio" name="sortType" onChange={() => setTypeSort(SORT_BY_REVIEW)}/>
             <span className="sort-panel__type-text">по популярности</span>
           </label>
@@ -43,12 +43,12 @@ function SortPanel() {
 
         <div className="sort-panel__direction">
 
-          <label className="sort-panel__direction">
+          <label className="sort-panel__direction-label sort-panel__direction-label--direction">
             <input className="sort-panel__direction-radio" type="radio" name="direction" onChange={() => setDirection(DIRECTION_UP)}/>
             <span className="sort-panel__direction-icon" aria-label="по возрастанию"></span>
           </label>
 
-          <label className="sort-panel__direction--reviews">
+          <label className="sort-panel__direction-label sort-panel__direction-label--reviews">
             <input className="sort-panel__direction-radio" type="radio" name="direction" onChange={() => setDirection(DIRECTION_DOWN)}/>
             <span className="sort-panel__direction-icon sort-panel__direction-icon--down" aria-label="по убыванию"></span>
           </label>

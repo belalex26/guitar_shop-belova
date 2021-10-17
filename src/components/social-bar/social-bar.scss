@@ -4,11 +4,12 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 49.5%;
     margin-top: 53px;
 }
 
-.social__icon {
+.social-bar__link-icon {
     fill: $base-while;
     opacity: 0.65;
 }
@@ -17,11 +18,11 @@
     outline: none;
 }
 
-.social-bar__link:hover .social__icon,
-.social-bar__link:focus .social__icon {
+.social-bar__link:hover .social-bar__link-icon,
+.social-bar__link:focus .social-bar__link-icon {
     opacity: 1;
 }
 
-.social-bar__link:active .social__icon {
+.social-bar__link:active .social-bar__link-icon {
     fill: $button-base-2;
 }
