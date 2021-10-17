@@ -18,7 +18,7 @@ function Basket() {
   const NOT_SALE = 0;
   // const dispatch = useDispatch();
   const [totaPriceItem, setTotaPriceItem] = useState([]);
-  const [promoCode, setPromoCode] = useState(`GITARAHIT`);
+  const [promoCode, setPromoCode] = useState(``);
   const [sale, setSale] = useState(0);
   const [saleCheck, setSaleCheck] = useState(false);
   const [errorPromoCode, setErrorPromoCode] = useState(false);
@@ -134,9 +134,9 @@ function Basket() {
           <ul className="basket__list">
             { cards.length === 0
               ?
-              <p basket__list-text>Пока пусто</p>
+              <p className="basket__list-text">Пока пусто</p>
               :
-              Object.keys(cart).map((item) => <BasketItem key={guitarObg[item][`articule`]}
+              Object.keys(cart).map((item) => <BasketItem key={item + guitarObg[item][`articule`]}
                 basketItem={guitarObg[item]}
                 count={cart[item]}
                 onRemoveModal={setRemoveModal}
@@ -151,7 +151,7 @@ function Basket() {
             <p className="basket__promo-text">Введите свой промокод, если он у вас есть.</p>
             <label className="basket__promo-label">
               <span className={errorPromoCode ? `basket__promo-error basket__promo-error--active` : `basket__promo-error`}>код не действителен</span>
-              <input className="basket__promo-input" type="text" onChange={onChangePromoCode}/>
+              <input className="basket__promo-input" type="text" onChange={onChangePromoCode} placeholder="GITARAHIT"/>
             </label>
             <span className={saleCheck ? `basket__promo-check basket__promo-check--active` : `basket__promo-check`}>промокод применен</span>
             <button className="basket__promo-btn" onClick={onButtonPromoClick}>Применить купон</button>

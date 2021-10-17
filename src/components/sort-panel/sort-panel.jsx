@@ -1,110 +1,28 @@
-import React, {useEffect} from 'react';
-import {useDispatch, useSelector} from "react-redux";
+import React, {useState, useEffect} from 'react';
+import {useDispatch} from "react-redux";
 
-import {selectSortDirection, selectSortType, changeSortType, changeSortDirection} from "../../store/filterSlise";
-import {selectFilter, changeFilter} from "../../store/filterSlise";
+import {changeSort} from "../../store/filterSlise";
+import {DIRECTION_DOWN, DIRECTION_UP, SORT_BY_REVIEW, SORT_BY_PRICE} from "../../utils";
+
 
 function SortPanel() {
   const dispatch = useDispatch();
 
-  const SORT_BY_PRICE = `price`;
-  const SORT_BY_REVIEW = `reviews`;
-  const DIRECTION_UP = `up`;
-  const DIRECTION_DOWN = `down`;
-
-  const typeSort = useSelector(selectSortType);
-  const direction = useSelector(selectSortDirection);
-
-  let guitarsCopyFilter = Array.from(useSelector(selectFilter));
+  const [direction, setDirection] = useState(``);
+  const [typeSort, setTypeSort] = useState(``);
 
   useEffect(() => {
-  }, [guitarsCopyFilter]);
+    getObjSort();
+  }, [direction, typeSort]);
 
-  useEffect(() => {
-    renderData();
-  }, [typeSort]);
+  const getObjSort = () => {
+    let sortsType = {
+      type: typeSort,
+      direction
+    };
 
-  useEffect(() => {
-    renderData();
-  }, [direction]);
-
-  const renderGuitarsSortByPriceUp = (arr) => {
-    arr.sort((a, b) => a.price > b.price ? 1 : -1);
-    return (arr);
+    dispatch(changeSort(sortsType));
   };
-  // по убыванию
-  const renderGuitarsSortByPriceDown = (arr) => {
-    arr.sort((a, b) => a.price <= b.price ? 1 : -1);
-    return (arr);
-  };
-
-  // рейтинг
-  // по возрастанию
-
-  const renderGuitarsSortByReviewsUp = (arr) => {
-    arr.sort((a, b) => a.reviews > b.reviews ? 1 : -1);
-    return (arr);
-  };
-
-  // по убыванию
-
-  const renderGuitarsSortByReviewsDown = (arr) => {
-    arr.sort((a, b) => a.reviews < b.reviews ? 1 : -1);
-    return (arr);
-  };
-
-  const renderData = () => {
-    dispatch(changeFilter(guitarsCopyFilter));
-  };
-
-  const onFilterByPriceClick = () => {
-    dispatch(changeSortType(SORT_BY_PRICE));
-    renderGuitarsSortByPriceUp(guitarsCopyFilter);
-    renderData();
-  };
-
-  const onFilterByReviewsClick = () => {
-    dispatch(changeSortType(SORT_BY_REVIEW));
-    renderGuitarsSortByReviewsDown(guitarsCopyFilter);
-    renderData();
-  };
-
-  const onDirectUpClick = () => {
-    dispatch(changeSortDirection(DIRECTION_UP));
-    renderGuitarsSortByPriceUp(guitarsCopyFilter);
-    renderData();
-  };
-
-  const onDirectDownClick = () => {
-    dispatch(changeSortDirection(DIRECTION_DOWN));
-    renderGuitarsSortByPriceDown(guitarsCopyFilter);
-    renderData();
-  };
-
-  // комбинации
-
-  // цена по возрастанию
-
-  if (typeSort === SORT_BY_PRICE && direction === DIRECTION_UP) {
-    renderGuitarsSortByPriceUp(guitarsCopyFilter);
-  }
-
-  // цена по убыванию
-
-  if (typeSort === SORT_BY_PRICE && direction === DIRECTION_DOWN) {
-    renderGuitarsSortByReviewsDown(guitarsCopyFilter);
-  }
-
-  // рейтинг по возрастанию
-
-  if (typeSort === SORT_BY_REVIEW && direction === DIRECTION_UP) {
-    renderGuitarsSortByReviewsUp(guitarsCopyFilter);
-  }
-  // рейтинг по убыванию
-
-  if (typeSort === SORT_BY_REVIEW && direction === DIRECTION_DOWN) {
-    renderGuitarsSortByReviewsDown(guitarsCopyFilter);
-  }
 
   return (
     <>
@@ -112,26 +30,26 @@ function SortPanel() {
       <div className="sort-panel__content">
 
         <div className="sort-panel__type">
-          <label className="sort-panel__type--price" onClick={onFilterByPriceClick}>
-            <input className="sort-panel__type-radio" type="radio" name="sortType" readOnly value="price"/>
+          <label className="sort-panel__type--price">
+            <input className="sort-panel__type-radio" type="radio" name="sortType" onChange={() => setTypeSort(SORT_BY_PRICE)}/>
             <span className="sort-panel__type-text">по цене</span>
           </label>
 
-          <label className="sort-panel__type--reviews"onClick={onFilterByReviewsClick}>
-            <input className="sort-panel__type-radio" type="radio" name="sortType" readOnly value="review"/>
+          <label className="sort-panel__type--reviews">
+            <input className="sort-panel__type-radio" type="radio" name="sortType" onChange={() => setTypeSort(SORT_BY_REVIEW)}/>
             <span className="sort-panel__type-text">по популярности</span>
           </label>
         </div>
 
         <div className="sort-panel__direction">
 
-          <label className="sort-panel__direction" onClick={onDirectUpClick}>
-            <input className="sort-panel__direction-radio" type="radio" name="direction" readOnly value="up"/>
+          <label className="sort-panel__direction">
+            <input className="sort-panel__direction-radio" type="radio" name="direction" onChange={() => setDirection(DIRECTION_UP)}/>
             <span className="sort-panel__direction-icon" aria-label="по возрастанию"></span>
           </label>
 
-          <label className="sort-panel__direction--reviews"onClick={onDirectDownClick}>
-            <input className="sort-panel__direction-radio" type="radio" name="direction" readOnly value="down"/>
+          <label className="sort-panel__direction--reviews">
+            <input className="sort-panel__direction-radio" type="radio" name="direction" onChange={() => setDirection(DIRECTION_DOWN)}/>
             <span className="sort-panel__direction-icon sort-panel__direction-icon--down" aria-label="по убыванию"></span>
           </label>
 

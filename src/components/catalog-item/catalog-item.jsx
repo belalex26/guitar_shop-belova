@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import {dataObject} from "../../store/objectSlise";
 
 import {renderPrice} from "../../utils";
-import Rating from "../rating/rating";
+import Ratings from "../ratings/ratings";
 import {useDispatch} from "react-redux";
 
 
@@ -30,7 +30,7 @@ function CatalogItem({...props}) {
           <img className="catalog__item-img-img" src={item.image} alt="фото товара" />
         </div>
         <div className="catalog__item-rate">
-          <Rating rating={item.rating}/>
+          <Ratings rating={item.rating}/>
           <p className="catalog__item-rate-text">{item.reviews}</p>
         </div>
         <div className="catalog__item-info">

@@ -1,30 +1,24 @@
 import {createSlice} from "@reduxjs/toolkit";
-import guitarsData from "../data/mockGuitars.js";
 
 export const filtersSlise = createSlice({
   name: `filter`,
   initialState: {
-    directionSort: ``,
-    sortType: ``,
-    filter: guitarsData
+    sort: {},
+    filter: {}
   },
   reducers: {
-    changeSortType: (state, action) => {
-      state.sortType = action.payload;
-    },
-
-    changeSortDirection: (state, action) => {
-      state.directionSort = action.payload;
+    changeSort: (state, action) => {
+      state.sort = {...action.payload};
     },
 
     changeFilter: (state, action) => {
-      state.filter = [...action.payload];
+      state.filter = {...action.payload};
     },
   },
 });
 
-export const {changeFilter, changeSortType, changeSortDirection} = filtersSlise.actions;
+export const {changeFilter, changeSort} = filtersSlise.actions;
 export const selectFilter = (state) => state.filter.filter;
-export const selectSortType = (state) => state.filter.sortType;
-export const selectSortDirection = (state) => state.filter.directionSort;
+export const selectSort = (state) => state.filter.sort;
+
 export default filtersSlise.reducer;

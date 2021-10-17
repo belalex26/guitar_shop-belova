@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import {useDispatch, useSelector} from "react-redux";
 
-import {renderPrice} from "../../utils";
+import {renderPrice, renderTypeText} from "../../utils";
 import {updateToCard, selectCard} from "../../store/cardSlise";
 import {dataObject} from "../../store/objectSlise";
 
@@ -61,7 +61,7 @@ function BasketItem({...props}) {
         <div className="basket__item-info">
           <h3 className="basket__item-title">{basketItem[`name`]}</h3>
           <p className="basket__item-article-number">Артикул: {basketItem[`articul`]} </p>
-          <p className="basket__item-guitar-type">{basketItem[`type`]}, {basketItem[`strings`]} струнная </p>
+          <p className="basket__item-guitar-type">{renderTypeText(basketItem[`type`])}, {basketItem[`strings`]} струнная </p>
         </div>
         <p className="basket__item-guitar-price">{renderPrice(basketItem[`price`])} ₽</p>
         <div className="basket__item-btns">

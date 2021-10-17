@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import PropTypes from 'prop-types';
 import {Link} from "react-router-dom";
@@ -7,15 +7,14 @@ import {selectObject} from "../../store/objectSlise";
 import {selectGuitars} from "../../store/giutarsSlise";
 import {addToCart} from "../../store/cardSlise";
 
-import {renderPrice} from "../../utils";
+import {renderPrice, renderTypeText} from "../../utils";
 
 const AddContent = ({...props}) => {
-  const {onModalAddActive} = props;
+  const {onModalAddActive, successModal, onSuccessModal} = props;
 
   const guitarId = useSelector(selectObject);
   const guitars = useSelector(selectGuitars);
   const dispatch = useDispatch();
-  const [successModal, setSuccessModal] = useState(false);
   let itemGuitar = guitars.find((index) => index.articul === guitarId.id);
 
   useEffect(() => {
@@ -26,7 +25,7 @@ const AddContent = ({...props}) => {
     let target = evt.target;
     let objArticul = target.getAttribute(`data-key`);
     dispatch(addToCart(objArticul));
-    setSuccessModal(true);
+    onSuccessModal(true);
   };
 
   // eslint-disable-next-line consistent-return
@@ -41,7 +40,7 @@ const AddContent = ({...props}) => {
               <div className="add-content__info-date">
                 <p className="add-content__info-name">{itemGuitar.name}</p>
                 <p className="add-content__info-article">Артикул: {itemGuitar.articul} </p>
-                <p className="add-content__info-type"> {itemGuitar.type}, {itemGuitar.strings} струнная</p>
+                <p className="add-content__info-type"> {renderTypeText(itemGuitar.type)}, {itemGuitar.strings} струнная</p>
                 <p className="add-content__info-price">Цена: {renderPrice(itemGuitar.price)} ₽</p>
               </div>
               <button className="add-content__btn" type="button" data-key={itemGuitar.articul} onClick={onClickAddToBasket}>Добавить в корзину</button>
@@ -73,6 +72,9 @@ const AddContent = ({...props}) => {
 
 AddContent.propTypes = {
   onModalAddActive: PropTypes.func,
+  modalActive: PropTypes.bool,
+  successModal: PropTypes.bool,
+  onSuccessModal: PropTypes.func,
 };
 
 export default AddContent;
