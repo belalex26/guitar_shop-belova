@@ -10,10 +10,10 @@ function Filters() {
 
   const [acoustic, setAcoustic] = useState(false);
   const [electro, setElectro] = useState(true);
-  const [uculele, setUculele] = useState(false);
+  const [uculele, setUculele] = useState(true);
 
-  const [str4, setStr4] = useState(false);
-  const [str6, setStr6] = useState(false);
+  const [str4, setStr4] = useState(true);
+  const [str6, setStr6] = useState(true);
   const [str7, setStr7] = useState(false);
   const [str12, setStr12] = useState(false);
 
