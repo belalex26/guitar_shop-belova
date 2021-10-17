@@ -4,7 +4,7 @@
 }
 
 .filters__title {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
     line-height: 21px;
     color: $base-black;
@@ -179,7 +179,7 @@
     color: $base-while;
     padding: 9px 28px;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: bold;
     
     &:hover,
     &:focus {
