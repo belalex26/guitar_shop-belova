@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import {useDispatch} from "react-redux";
 
 import {changeFilter} from "../../store/filterSlise";
-import {renderArrFilter} from "../../utils";
 
 function Filters() {
 
@@ -63,9 +62,18 @@ function Filters() {
     12: str12
   };
 
+  const renderArrFilter = (arr, filter) => {
+    for (let key in filter) {
+      if (filter[key] === true) {
+        arr.push(key);
+      }
+    }
+  };
+
   const checkType = () => {
 
     let typeFilter = [];
+
     renderArrFilter(typeFilter, type);
 
     let typeCount = typeFilter.join(`-`);

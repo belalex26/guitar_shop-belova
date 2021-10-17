@@ -25,14 +25,6 @@ export const renderTypeText = (type) => {
   return (`Укулеле`);
 };
 
-export const renderArrFilter = (arr, filter) => {
-  for (let key in filter) {
-    if (filter[key] === true) {
-      arr.push(key);
-    }
-  }
-};
-
 export const renderPrice = (el) => {
   let separator = ` `;
   // eslint-disable-next-line indent
