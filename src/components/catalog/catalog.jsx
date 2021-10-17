@@ -8,7 +8,7 @@ import {selectPage} from "../../store/paginationSlise";
 import {selectFilter, selectSort} from "../../store/filterSlise";
 
 
-import {renderGuitarsSortByPriceUp, renderGuitarsSortByPriceDown, renderGuitarsSortByReviewsUp, renderGuitarsSortByReviewsDown, filterChechbox, filterByPrice} from "../../utils";
+import {renderGuitarsSortByPriceUp, renderGuitarsSortByPriceDown, renderGuitarsSortByReviewsUp, renderGuitarsSortByReviewsDown, filterByPrice} from "../../utils";
 import {DIRECTION_DOWN, DIRECTION_UP, SORT_BY_REVIEW, SORT_BY_PRICE} from "../../utils";
 import CatalogItem from "../catalog-item/catalog-item";
 import Modal from "../modal/modal";
@@ -52,6 +52,14 @@ function Catalog() {
   const onPageChangeClick = ({selected}) => {
     dispatch(selectPage(selected));
   };
+
+  function filterChechbox(array = [], filters = {}) {
+    const keys = Object.keys(filters).filter((key) => filters.hasOwnProperty(key));
+    return array.filter((elem) => {
+      const commonKeys = keys.filter((key) => elem.hasOwnProperty(key));
+      return commonKeys.reduce((flag, key) => (flag && filters[key].includes(elem[key])), true);
+    });
+  }
 
   // фильтры
 

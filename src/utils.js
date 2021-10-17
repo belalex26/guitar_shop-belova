@@ -35,14 +35,6 @@ export const renderPrice = (el) => {
   return el;
 };
 
-export function filterChechbox(array = [], filters = {}) {
-  const keys = Object.keys(filters).filter((key) => filters.hasOwnProperty(key));
-  return array.filter((elem) => {
-    const commonKeys = keys.filter((key) => elem.hasOwnProperty(key));
-    return commonKeys.reduce((flag, key) => (flag && filters[key].includes(elem[key])), true);
-  });
-}
-
 export const filterByPrice = (arr, a, b) => {
   return arr.filter((item) => (a <= item.price && item.price <= b));
 };
