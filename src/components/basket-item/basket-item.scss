@@ -68,13 +68,16 @@
 
 .basket__item-count {
     margin: 0;
-    padding-top: 5px;
     text-align: center;
     width: 28px;
     font-size: 16px;
     color: $input-color-base;
     border-top: 1px solid $input-color-base;
     border-bottom: 1px solid $input-color-base;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+
 }
 
 .basket__item-price-total {

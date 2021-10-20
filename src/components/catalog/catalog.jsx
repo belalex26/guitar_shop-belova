@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, {useState, useEffect} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import ReactPaginate from "react-paginate";
@@ -63,31 +64,59 @@ function Catalog() {
 
   // фильтры
 
-  const onFilters = () => {
-    if (Object.keys(filter).length !== 0) {
+  let type = filter.typeFilterArr;
+  let strings = filter.stringFilterArr;
 
-      let type = filter.typeFilterArr;
-      let strings = filter.stringFilterArr;
+  let filterType = {
+    type,
+  };
 
-      let filterData = {
-        type,
-        strings
-      };
+  let filterStrings = {
+    strings
+  };
 
-      cloneGuitars = filterChechbox(cloneGuitars, filterData);
+  // eslint-disable-next-line consistent-return
+  const onFilterByCheckbox = () => {
 
-      // по цене
+    if (type.length > 0) {
+      return (cloneGuitars = filterChechbox(cloneGuitars, filterType));
+    }
 
-      cloneGuitars = filterByPrice(cloneGuitars, filter.minPrice, filter.maxPrice);
+    if (strings.length > 0) {
+      return (cloneGuitars = filterChechbox(cloneGuitars, filterStrings));
     }
     return cloneGuitars;
   };
+
+
+  const onFilters = () => {
+    if (Object.keys(filter).length !== 0) {
+      if (type.length === 0 && strings.length === 0) {
+        return cloneGuitars;
+      }
+
+      onFilterByCheckbox();
+
+
+      // cloneGuitars = filterChechbox(cloneGuitars, filterData);
+
+      // по цене
+
+      console.log(filter.tempMin);
+
+      cloneGuitars = filterByPrice(cloneGuitars, filter.tempMin, filter.tempMax);
+    }
+    return cloneGuitars;
+  };
+
 
   const onSortingGuitars = () => {
 
     if (sort.type === SORT_BY_PRICE && sort.direction === DIRECTION_UP) {
       renderGuitarsSortByPriceUp(cloneGuitars);
     }
+
+    console.log(cloneGuitars);
 
     // цена по убыванию
 
@@ -119,8 +148,6 @@ function Catalog() {
     if (sort.direction === DIRECTION_DOWN) {
       renderGuitarsSortByPriceDown(cloneGuitars);
     }
-
-    return cloneGuitars;
   };
 
   // отрисовка основного массива
@@ -130,19 +157,11 @@ function Catalog() {
     onSortingGuitars();
     renderPageCount();
 
-    cloneGuitars.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
-      .map((item) => <CatalogItem key={item.articul}
-        item={item}
-        onModalActive={setModalActive}
-      />);
-
     if (cloneGuitars.length === 0) {
-      return (
-        <p className="catalog__list-text">Нет товаров по указанным фильтрам</p>
-      );
+      cloneGuitars = guitars;
+    }
 
-    } return (
-      cloneGuitars.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
+    return (cloneGuitars.slice(pagesVisites, pagesVisites + GUITARS_PER_PAGE)
       .map((item) => <CatalogItem key={item.articul}
         item={item}
         onModalActive={setModalActive}
@@ -150,6 +169,7 @@ function Catalog() {
   };
 
   let guitarPage = renderGuitars();
+  console.log(guitarPage);
 
   return (
     <>

@@ -8,7 +8,7 @@ function Menu() {
   return (
     <nav className="menu">
       <div className="menu__container">
-        <Link to="/">
+        <Link to="/" aria-label="На главную">
           <Logo />
         </Link>
         <ul className="menu__list">

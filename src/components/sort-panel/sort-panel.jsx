@@ -43,14 +43,14 @@ function SortPanel() {
 
         <div className="sort-panel__direction">
 
-          <label className="sort-panel__direction-label sort-panel__direction-label--direction">
+          <label className="sort-panel__direction-label">
             <input className="sort-panel__direction-radio" type="radio" name="direction" onChange={() => setDirection(DIRECTION_UP)}/>
-            <span className="sort-panel__direction-icon" aria-label="по возрастанию"></span>
+            <span className="sort-panel__direction-icon" aria-label="по возрастанию" role="radio"></span>
           </label>
 
-          <label className="sort-panel__direction-label sort-panel__direction-label--reviews">
+          <label className="sort-panel__direction-label">
             <input className="sort-panel__direction-radio" type="radio" name="direction" onChange={() => setDirection(DIRECTION_DOWN)}/>
-            <span className="sort-panel__direction-icon sort-panel__direction-icon--down" aria-label="по убыванию"></span>
+            <span className="sort-panel__direction-icon sort-panel__direction-icon--down" aria-label="по убыванию" role="radio"></span>
           </label>
 
         </div>

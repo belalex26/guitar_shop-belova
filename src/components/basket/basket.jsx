@@ -121,7 +121,7 @@ function Basket() {
           <h1 className="basket__title">Корзина</h1>
           <ul className="basket__breadcrumps">
             <li className="basket__breadcrumps-item">
-              <Link className="basket__breadcrumps-link" to="/main">Главная</Link>
+              <a className="basket__breadcrumps-link" href="#">Главная</a>
             </li>
             <li className="basket__breadcrumps-item">
               <Link className="basket__breadcrumps-link" to="/">Каталог</Link>
@@ -151,7 +151,7 @@ function Basket() {
             <p className="basket__promo-text">Введите свой промокод, если он у вас есть.</p>
             <label className="basket__promo-label">
               <span className={errorPromoCode ? `basket__promo-error basket__promo-error--active` : `basket__promo-error`}>код не действителен</span>
-              <input className="basket__promo-input" type="text" onChange={onChangePromoCode} placeholder="GITARAHIT"/>
+              <input className="basket__promo-input" type="text" onChange={onChangePromoCode} placeholder="Введите промокод"/>
             </label>
             <span className={saleCheck ? `basket__promo-check basket__promo-check--active` : `basket__promo-check`}>промокод применен</span>
             <button className="basket__promo-btn" onClick={onButtonPromoClick}>Применить купон</button>

@@ -3,10 +3,13 @@
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 49.5%;
+    width: 66.5%;
     margin-top: 53px;
+}
+
+.social-bar__item {
+    margin-right: 23px;
 }
 
 .social-bar__link-icon {

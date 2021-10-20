@@ -23,19 +23,19 @@ function Footer() {
             <p className="footer__title">Каталог</p>
             <ul className="footer__catalog-list">
               <li className="footer__catalog-item">
-                <a className="footer__catalog-link" href="">Акустические гитары</a>
+                <a className="footer__catalog-link" href="/acoustic">Акустические гитары</a>
               </li>
               <li className="footer__catalog-item">
-                <a className="footer__catalog-link" href="">Классические гитары</a>
+                <a className="footer__catalog-link" href="/classic">Классические гитары</a>
               </li>
               <li className="footer__catalog-item">
-                <a className="footer__catalog-link" href="">Электрогитары</a>
+                <a className="footer__catalog-link" href="/electro">Электрогитары</a>
               </li>
               <li className="footer__catalog-item">
-                <a className="footer__catalog-link" href="">Бас-гитары</a>
+                <a className="footer__catalog-link" href="/bass">Бас-гитары</a>
               </li>
               <li className="footer__catalog-item">
-                <a className="footer__catalog-link" href="">Укулеле</a>
+                <a className="footer__catalog-link" href="/uculele">Укулеле</a>
               </li>
             </ul>
           </div>
@@ -44,19 +44,19 @@ function Footer() {
             <p className="footer__title">Информация</p>
             <ul className="footer__support-list">
               <li className="footer__support-item">
-                <a className="footer__catalog-link" href="">Где купить?</a>
+                <a className="footer__catalog-link" href="/contacts">Где купить?</a>
               </li>
               <li className="footer__support-item">
-                <a className="footer__support-link" href="">Блог</a>
+                <a className="footer__support-link" href="/vlog">Блог</a>
               </li>
               <li className="footer__support-item">
-                <a className="footer__support-link" href="">Вопрос - ответ</a>
+                <a className="footer__support-link" href="/questions">Вопрос - ответ</a>
               </li>
               <li className="footer__support-item">
-                <a className="footer__support-link" href="">Возврат</a>
+                <a className="footer__support-link" href="/refund">Возврат</a>
               </li>
               <li className="footer__support-item">
-                <a className="footer__support-link" href="">Сервис-центры</a>
+                <a className="footer__support-link" href="/service-center">Сервис-центры</a>
               </li>
             </ul>
           </div>

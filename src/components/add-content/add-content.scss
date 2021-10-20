@@ -1,7 +1,7 @@
 .add-content__title {
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: 1.8px;
+    letter-spacing: 0.8px;
     line-height: 15px;
     margin-left: 50px;
     padding-top: 12px;
@@ -23,7 +23,7 @@
 }
 
 .add-content__info-date {
-    width: 43%;
+    width: 44.5%;
 }
 
 .add-content__info-name {
@@ -53,11 +53,11 @@
 
 .add-content__btn {
     border: none;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     color: $base-while;
     letter-spacing: 0.8px;
-    padding: 12px 22px;
+    padding: 12px 19px;
     border-radius: 2px;
     background-color: $button-base-2;
     margin-top: 23px;
@@ -76,12 +76,11 @@
 
 .add-content__success-wrap {
     display: flex;
-    width: 478px;
+    width: 482px;
     margin: 0 auto;
     padding-left: 6px;
     padding-top: 23px;
     padding-bottom: 53px;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -98,7 +97,8 @@
     background-color: $button-base-2;
     color: $base-while;
     border: none;
-    padding: 12px 26px;
+    padding: 13px 25px;
+    margin-right: 38px;
 
     &:hover,
     &:focus {
@@ -115,6 +115,8 @@
     border: 1px solid $input-color;
     color: $input-color;
     background: $base-while;
+    letter-spacing: 1.2px;
+    padding: 11px 12px;
 
     &:hover,
     &:focus {

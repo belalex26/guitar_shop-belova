@@ -66,7 +66,7 @@ function BasketItem({...props}) {
         <p className="basket__item-guitar-price">{renderPrice(basketItem[`price`])} ₽</p>
         <div className="basket__item-btns">
           <button className="basket__item-btn basket__item-btn--prev" onClick={onPrevButtonClick} type="button"></button>
-          <p className="basket__item-count">{countItem}</p>
+          <input className="basket__item-count" type="number" value={countItem} onChange={(evt) => setCountItem(evt.target.value)}/>
           <button className="basket__item-btn basket__item-btn--next" type="button" onClick={onNextButtonClick}></button>
         </div>
         <p className="basket__item-price-total">{renderPrice(totalPrice)} ₽</p>

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {useDispatch} from "react-redux";
+import NumberFormat from 'react-number-format';
 
 import {changeFilter} from "../../store/filterSlise";
 
@@ -9,11 +10,11 @@ function Filters() {
   const [maxPrice, setMaxPrice] = useState(30000);
 
   const [acoustic, setAcoustic] = useState(false);
-  const [electro, setElectro] = useState(true);
-  const [uculele, setUculele] = useState(true);
+  const [electro, setElectro] = useState(false);
+  const [uculele, setUculele] = useState(false);
 
-  const [str4, setStr4] = useState(true);
-  const [str6, setStr6] = useState(true);
+  const [str4, setStr4] = useState(false);
+  const [str6, setStr6] = useState(false);
   const [str7, setStr7] = useState(false);
   const [str12, setStr12] = useState(false);
 
@@ -32,10 +33,10 @@ function Filters() {
     checkType();
   }, [type]);
 
-  if (minPrice < 0) {
+  if (tempMin < 0) {
     return setMinPrice(0);
   }
-  if (maxPrice < 0) {
+  if (tempMin < 0) {
     return setMaxPrice(0);
   }
 
@@ -115,6 +116,7 @@ function Filters() {
 
   };
 
+
   const onShowBtnClick = () => {
     let temp = {};
     let typeFilterArr = [];
@@ -124,8 +126,8 @@ function Filters() {
     renderArrFilter(stringFilterArr, strings);
 
     temp = {
-      maxPrice,
-      minPrice,
+      tempMax,
+      tempMin,
       typeFilterArr,
       stringFilterArr
     };
@@ -142,10 +144,30 @@ function Filters() {
           <p className="filters__price-title">Цена, ₽</p>
           <div className="filters__price-content">
             <label className="filters__price-label">
-              <input className="filters__price-input" type="number" value={minPrice} onChange={((evt) => setMinPrice(evt.target.value))}/>
+              <NumberFormat
+                className="filters__price-input"
+                displayType="number"
+                thousandSeparator=" "
+                placeholder="1 000"
+                value={minPrice}
+                onValueChange={(values) => {
+                  const {value} = values;
+                  setMinPrice(value);
+                }}
+              />
             </label>
             <label className="filters__price-label">
-              <input className="filters__price-input" type="number" value={maxPrice} onChange={((evt) => setMaxPrice(evt.target.value))}/>
+              <NumberFormat
+                className="filters__price-input"
+                displayType="number"
+                thousandSeparator=" "
+                placeholder="30 000"
+                value={maxPrice}
+                onValueChange={(values) => {
+                  const {value} = values;
+                  setMinPrice(value);
+                }}
+              />
             </label>
           </div>
         </div>

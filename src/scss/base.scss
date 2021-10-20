@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 .body {
     font-family: 'droid-sans', 'Arial', sans-serif;
     font-weight: normal;
@@ -7,6 +11,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     margin: 0 auto;
+    min-height: 100%;
 }
 
 .visually-hidden {
@@ -20,4 +25,16 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }

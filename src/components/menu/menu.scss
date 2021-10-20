@@ -6,8 +6,8 @@
 .menu__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 9px 5.8% 9px 4%;
+    align-items: flex-start;
+    padding: 20px 5.8% 9px 4%;
 }
 
 .menu .logo {
@@ -26,6 +26,7 @@
     width: 60%;
     margin-left: 2%;
     flex-wrap: wrap;
+    margin-top: 5px;
 }
 
 .menu__item {
