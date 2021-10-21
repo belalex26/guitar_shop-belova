@@ -105,7 +105,8 @@ function Basket() {
 
   const onChangePromoCode = (evt) => {
     setSaleCheck(false);
-    setPromoCode(evt.target.value);
+    let promoValue = evt.target.value;
+    setPromoCode(promoValue.replace(/\s/g, ``));
   };
 
   const renderTotalPrice = () => {
@@ -151,7 +152,7 @@ function Basket() {
             <p className="basket__promo-text">Введите свой промокод, если он у вас есть.</p>
             <label className="basket__promo-label">
               <span className={errorPromoCode ? `basket__promo-error basket__promo-error--active` : `basket__promo-error`}>код не действителен</span>
-              <input className="basket__promo-input" type="text" onChange={onChangePromoCode} placeholder="Введите промокод"/>
+              <input className="basket__promo-input" type="text" value={promoCode} onChange={onChangePromoCode} placeholder="Введите промокод" pattern="/[\s/g]"/>
             </label>
             <span className={saleCheck ? `basket__promo-check basket__promo-check--active` : `basket__promo-check`}>промокод применен</span>
             <button className="basket__promo-btn" onClick={onButtonPromoClick}>Применить купон</button>
