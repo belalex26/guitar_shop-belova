@@ -8,9 +8,13 @@ html {
     font-style: normal;
     box-sizing: border-box;
     padding: 0;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.root {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    margin: 0 auto;
     min-height: 100%;
 }
 

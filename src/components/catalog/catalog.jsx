@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, {useState, useEffect} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import ReactPaginate from "react-paginate";
@@ -102,8 +101,6 @@ function Catalog() {
 
       // по цене
 
-      console.log(filter.tempMin);
-
       cloneGuitars = filterByPrice(cloneGuitars, filter.tempMin, filter.tempMax);
     }
     return cloneGuitars;
@@ -115,8 +112,6 @@ function Catalog() {
     if (sort.type === SORT_BY_PRICE && sort.direction === DIRECTION_UP) {
       renderGuitarsSortByPriceUp(cloneGuitars);
     }
-
-    console.log(cloneGuitars);
 
     // цена по убыванию
 
@@ -169,7 +164,6 @@ function Catalog() {
   };
 
   let guitarPage = renderGuitars();
-  console.log(guitarPage);
 
   return (
     <>
