@@ -27,7 +27,7 @@ function CatalogItem({...props}) {
     <>
       <li className="catalog__item">
         <div className="catalog__item-img">
-          <img className="catalog__item-img-img" src={item.image} alt="фото товара" />
+          <img className="catalog__item-img-img" src={item.image} alt="фото товара" width="68" height="190"/>
         </div>
         <div className="catalog__item-rate">
           <Ratings rating={item.rating}/>

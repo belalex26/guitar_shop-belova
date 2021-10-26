@@ -57,7 +57,7 @@ function BasketItem({...props}) {
   return (
     <>
       <li className="basket__item">
-        <img className="basket__item-img" src={basketItem[`image`]} alt="фото товара"></img>
+        <img className="basket__item-img" src={basketItem[`image`]} alt="фото товара" width="48" height="124"></img>
         <div className="basket__item-info">
           <h3 className="basket__item-title">{basketItem[`name`]}</h3>
           <p className="basket__item-article-number">Артикул: {basketItem[`articul`]} </p>
