@@ -1,2 +1,4 @@
-user-agent: *
-disallow: /downloads/
+User-agent: *
+Disallow: 
+Host: guitar-shop-belova-liard
+Sitemap: http://guitar-shop-belova-liard/sitemap.xml
